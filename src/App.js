@@ -1,6 +1,6 @@
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react'
-import { VStack, Stack, Flex, Spacer, Grid, GridItem, Container, Box } from '@chakra-ui/react' //layout
+import { VStack, Stack, Flex, Spacer, Grid, GridItem, Box } from '@chakra-ui/react' //layout
 import { Heading, Text } from '@chakra-ui/react' //typography
 import { ButtonGroup, Button } from '@chakra-ui/react'
 
@@ -11,14 +11,14 @@ function App() {
         templateAreas={`"header header header"
                   "left-nav main right-nav"
                   "footer footer footer"`}
-        gridTemplateRows={'50px 1fr 50px'}
+        gridTemplateRows={'1fr 1fr 50px'}
         gridTemplateColumns={'75px 1fr 75px'}
         h='200px'
         gap='1'
         color='blackAlpha.700'
         fontWeight='bold'
       >
-        <GridItem pl='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
+        <GridItem p='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
           <Flex minWidth='max-content' alignItems='center' gap='2'>
             <Box p='2'>
               <Heading size='md'>Sasha Czerniawski</Heading>
@@ -33,11 +33,13 @@ function App() {
             </ButtonGroup>
           </Flex>
         </GridItem>
+        
         <GridItem pl='2' border='1px' borderColor='pink.300' area={'left-nav'}>
           Left-Nav
         </GridItem>
-        <GridItem pl='2' border='1px' borderColor='green.300' area={'main'}>
-          <Container maxW='6xl' border='1px' borderColor='blue.600'> 
+        
+        <GridItem border='1px' borderColor='green.300' area={'main'} align='center'>
+          <Box align='start' width='80%' border='1px' borderColor='blue.600'> 
             <VStack
               height={{ base: '60vh', lg: '85vh' }}
               justify='center'
@@ -54,11 +56,7 @@ function App() {
                 Button
               </Button>
             </VStack>
-            {/* <Box display="flex" alignItems={'center'} justifyContent={'left'} h={{ base: '60vh', lg: '85vh' }} border='1px' borderColor='pink.300'>
-              
-            </Box> */}
-            
-          </Container>
+          </Box>
         </GridItem>
         <GridItem pl='2' border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
           Footer
