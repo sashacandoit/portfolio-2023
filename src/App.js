@@ -1,7 +1,7 @@
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react'
-import { Flex, Spacer, Grid, GridItem, Container, Box } from '@chakra-ui/react' //layout
-import { Stack, Heading, Text } from '@chakra-ui/react' //typography
+import { VStack, Stack, Flex, Spacer, Grid, GridItem, Container, Box } from '@chakra-ui/react' //layout
+import { Heading, Text } from '@chakra-ui/react' //typography
 import { ButtonGroup, Button } from '@chakra-ui/react'
 
 function App() {
@@ -38,7 +38,13 @@ function App() {
         </GridItem>
         <GridItem pl='2' border='1px' borderColor='green.300' area={'main'}>
           <Container maxW='6xl' border='1px' borderColor='blue.600'> 
-            <Box w='100%' p={4} border='1px' borderColor='pink.300'>
+            <VStack
+              height={{ base: '60vh', lg: '85vh' }}
+              justify='center'
+              spacing={6}
+              align='start'
+              border='1px' borderColor='pink.300'
+            >
               <Stack spacing={3}>
                 <Text fontSize='lg'>Hi, I'm</Text>
                 <Heading as='h1' size='4xl' noOfLines={1}>Sasha</Heading>
@@ -47,7 +53,10 @@ function App() {
               <Button colorScheme='red' variant='outline' size={'lg'}>
                 Button
               </Button>
-            </Box>
+            </VStack>
+            {/* <Box display="flex" alignItems={'center'} justifyContent={'left'} h={{ base: '60vh', lg: '85vh' }} border='1px' borderColor='pink.300'>
+              
+            </Box> */}
             
           </Container>
         </GridItem>
