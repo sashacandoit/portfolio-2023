@@ -2,7 +2,8 @@ import './App.css';
 import { ChakraProvider } from '@chakra-ui/react'
 import { VStack, Stack, Flex, Spacer, Grid, GridItem, Box } from '@chakra-ui/react' //layout
 import { Heading, Text } from '@chakra-ui/react' //typography
-import { ButtonGroup, Button } from '@chakra-ui/react'
+import { ButtonGroup, Button, Link } from '@chakra-ui/react'
+import { GithubIcon, LinkedinIcon, CodepenIcon, LineSvg } from './assets/icons/icons.js'
 
 function App() {
   return (
@@ -34,15 +35,33 @@ function App() {
           </Flex>
         </GridItem>
         
-        <GridItem pl='2' border='1px' borderColor='pink.300' area={'left-nav'}>
-          Left-Nav
+        <GridItem pl='2' border='1px' borderColor='blue.300' area={'left-nav'}>
+          <VStack
+            height={'100%'}
+            justify='end'
+            spacing={6}
+            align='center'
+            border='1px' borderColor='pink.300'
+          >
+            <Link href='https://github.com/sashacandoit' isExternal>
+              <GithubIcon w='20' h="21" fill="none" />
+            </Link>
+            <Link href='https://github.com/sashacandoit' isExternal>
+              <LinkedinIcon width='20px' height="21" fill="none" />
+            </Link>
+            <Link href='https://github.com/sashacandoit' isExternal>
+              <CodepenIcon w='20px' h="20px" fill="none" />
+            </Link>
+            <LineSvg />
+            
+          </VStack>
         </GridItem>
         
         <GridItem border='1px' borderColor='green.300' area={'main'} align='start' padding={'0 6%'}>
-          <Box align='start' border='1px' borderColor='blue.600'> 
+          <Box align='start' border='1px' borderColor='blue.600' height={{ base: '60vh', lg: '85vh' }}> 
             <VStack
-              height={{ base: '60vh', lg: '85vh' }}
-              justify='center'
+              height={'25rem'}
+              justify='end'
               spacing={6}
               align='start'
               border='1px' borderColor='pink.300'
@@ -58,6 +77,7 @@ function App() {
             </VStack>
           </Box>
         </GridItem>
+
         <GridItem pl='2' border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
           Footer
         </GridItem>
