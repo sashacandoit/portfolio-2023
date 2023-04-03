@@ -82,7 +82,20 @@ function App() {
           Footer
         </GridItem>
         <GridItem pl='2' border='1px' borderColor='pink.300' area={'right-nav'}>
-          Right-Nav
+          <VStack
+            height={'100%'}
+            justify='end'
+            spacing={6}
+            align='center'
+            border='1px' borderColor='pink.300'
+          >
+            <Link href='mailto:sashacandoit@gmail.com' isExternal className='RightNav-email-link'>
+              sashacandoit@gmail.com
+            </Link>
+            
+            <LineSvg />
+
+          </VStack>
         </GridItem>
       </Grid>
     </ChakraProvider>
