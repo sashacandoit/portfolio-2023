@@ -38,8 +38,8 @@ function App() {
           Left-Nav
         </GridItem>
         
-        <GridItem border='1px' borderColor='green.300' area={'main'} align='center'>
-          <Box align='start' width='80%' border='1px' borderColor='blue.600'> 
+        <GridItem border='1px' borderColor='green.300' area={'main'} align='start' padding={'0 6%'}>
+          <Box align='start' border='1px' borderColor='blue.600'> 
             <VStack
               height={{ base: '60vh', lg: '85vh' }}
               justify='center'
