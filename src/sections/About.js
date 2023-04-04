@@ -1,8 +1,9 @@
 import React from "react";
-import { Container, Grid, GridItem, Text, Link, VStack, Image, Box, List, ListIcon, ListItem } from '@chakra-ui/react'
+import { Container, Grid, GridItem, Text, Link, VStack, Image, Box, List, ListIcon, ListItem, Table, Tbody, Tr, Td  } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import SectionHeading from "./components/SectionHeading";
 import { about_me_tech } from "../data/portfolio_data"
+import TechTable from "./components/TechTable"
 
 function About() {
   return (
@@ -50,8 +51,8 @@ function About() {
           <Text lineHeight='1.5rem' fontSize='md'>
             Here are a few technologies I’ve been working with recently:
           </Text>
-          <List spacing={3}>
-            
+          <TechTable />
+          {/* <List spacing={3}>
               {about_me_tech.map(function (t) {
                 return (
                   <ListItem fontSize='sm' key={t}>
@@ -60,7 +61,7 @@ function About() {
                   </ListItem>
                 )
               })}
-          </List>
+          </List> */}
         </GridItem>
       </Grid>
     </Container>

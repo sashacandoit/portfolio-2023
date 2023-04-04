@@ -1,5 +1,5 @@
 const about_me_tech = [
-  "JavaScript (ES6+)", "React", "Node.js", "Express.js", "Python", "Flask", "PostgreSQL", "SQL", "Wordpress", "HTML5", "SCSS", "JSON", "GitHub", "Netlify", "Heroku"
+  ["JavaScript (ES6+)", "React", "Node.js", "Express.js", "Python"], ["Flask", "PostgreSQL", "SQL", "Wordpress", "HTML5"], ["SCSS", "JSON", "GitHub", "Netlify", "Heroku"]
 ]
 
 const experience = {
