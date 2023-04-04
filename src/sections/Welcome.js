@@ -5,7 +5,7 @@ import { Button } from '@chakra-ui/react'
 
 function Welcome() {
   return (
-    <Box align='start' border='1px' borderColor='blue.600' height={{ base: '60vh', lg: '85vh' }}>
+    <Box align='start' border='1px' borderColor='blue.600' minHeight={{ base: '60vh', lg: '85vh' }}>
       <VStack
         height={'30rem'}
         justify='end'
