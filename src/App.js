@@ -6,6 +6,8 @@ import Welcome from './sections/Welcome'
 import TopNav from './sections/TopNav'
 import Footer from './sections/Footer'
 import About from './sections/About';
+import Work from './sections/Work';
+
 
 import { Grid, GridItem } from '@chakra-ui/react' //layout
 
@@ -32,6 +34,7 @@ function App() {
         <GridItem border='1px' borderColor='green.300' area={'main'} align='start' padding={'0 6%'}>
           <Welcome />
           <About />
+          <Work />
         </GridItem>
 
         <GridItem pl='2' border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>

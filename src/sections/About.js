@@ -1,8 +1,6 @@
 import React from "react";
-import { Container, Grid, GridItem, Text, Link, VStack, Image, Box, List, ListIcon, ListItem, Table, Tbody, Tr, Td  } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { Container, Grid, GridItem, Text, Link, VStack, Image, Box } from '@chakra-ui/react'
 import SectionHeading from "./components/SectionHeading";
-import { about_me_tech } from "../data/portfolio_data"
 import TechTable from "./components/TechTable"
 
 function About() {
@@ -52,16 +50,6 @@ function About() {
             Here are a few technologies I’ve been working with recently:
           </Text>
           <TechTable />
-          {/* <List spacing={3}>
-              {about_me_tech.map(function (t) {
-                return (
-                  <ListItem fontSize='sm' key={t}>
-                    <ListIcon as={ChevronRightIcon} color='red.300' />
-                    {t}
-                  </ListItem>
-                )
-              })}
-          </List> */}
         </GridItem>
       </Grid>
     </Container>
