@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Grid, GridItem, Tabs, TabList, Tab, TabPanels, TabPanel } from '@chakra-ui/react'
+import { Container, Grid, GridItem } from '@chakra-ui/react'
 import SectionHeading from "./components/SectionHeading";
+import WorkTabs from "./components/WorkTabs";
 
 function Work() {
   return (
@@ -17,25 +18,7 @@ function Work() {
           <SectionHeading title='Work' />
         </GridItem>
         <GridItem border='1px' borderColor='orange.300' area={'work-experience'}>
-          <Tabs orientation="vertical">
-            <TabList>
-              <Tab>One</Tab>
-              <Tab>Two</Tab>
-              <Tab>Three</Tab>
-            </TabList>
-
-            <TabPanels>
-              <TabPanel>
-                <p>one!</p>
-              </TabPanel>
-              <TabPanel>
-                <p>two!</p>
-              </TabPanel>
-              <TabPanel>
-                <p>three!</p>
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
+          <WorkTabs />
         </GridItem>
       </Grid>
     </Container>

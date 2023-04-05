@@ -2,19 +2,19 @@ const about_me_tech = [
   ["JavaScript (ES6+)", "React", "Node.js", "Express.js", "Python"], ["Flask", "PostgreSQL", "SQL", "Wordpress", "HTML5"], ["SCSS", "JSON", "GitHub", "Netlify", "Heroku"]
 ]
 
-const experience = {
-  dminti: {
+const experience = [
+  {
     company: "DMINTI Inc.",
-    title: "Web Developer @ DMINTI",
+    title: "Web Developer",
     start_date: "Aug 2021",
     end_date: "Present",
-    "experience": [
+    experience: [
       "Created 20+ custom WordPress layouts for featured artists and artwork launches.",
       "Developed custom interface components, using Javascript, jQuery, CSS & HTML, to enhance the existing site design and functionality to best suit the company’s changing needs as a startup.",
       "Led the company’s migration from WordPress to React, in order to enable blockchain payments, improve load times, and allow for scalability."
     ]
   },
-  jains: {
+  {
     company: "Jain Family",
     title: "Family Manager & Personal Assistant",
     start_date: "Mar 2011",
@@ -29,7 +29,7 @@ const experience = {
       "Demonstrated exceptional discretion and confidentiality in all tasks and responsibilities, ensuring that all information was kept confidential and sensitive information was protected. Maintained the utmost professionalism at all times."
     ]
   },
-  sotto_il_sole: {
+  {
     company: "Sotto il Sole Inc.",
     title: "Founder & Cobbler",
     start_date: "June 2017",
@@ -43,7 +43,7 @@ const experience = {
       "Established a loyal client base through exceptional customer service and personalized attention to each order, leading to a high percentage of repeat customers and referrals."
     ]
   }
-}
+]
 
 const featured_projects = {
   packable: {
