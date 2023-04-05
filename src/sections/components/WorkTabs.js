@@ -27,12 +27,12 @@ function WorkTabs() {
 function TabDetail(props) {
   const { tabContent } = props;
   return (
-    <TabPanel>
+    <TabPanel overflow="scroll" maxHeight="28vh" minHeight="28vh">
       <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='red.500'>@ {tabContent.company}</Link></Heading>
       <Text fontSize="md">{tabContent.start_date} - {tabContent.end_date}</Text>
       <List>
         {(tabContent.experience).map((item, idx) => (
-          <ListItem key={idx}>
+          <ListItem paddingLeft="1rem" textIndent="-1.5rem" marginTop="0.7rem" key={idx}>
             <ListIcon as={ChevronRightIcon} color='red.500' />
             {item}
           </ListItem>

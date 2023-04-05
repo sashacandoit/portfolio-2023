@@ -5,7 +5,7 @@ import TechTable from "./components/TechTable"
 
 function About() {
   return (
-    <Container maxW='container.lg'> 
+    <Container maxW='container.lg' marginTop="15rem" marginBottom="15rem"> 
       <Grid
         border='1px' borderColor='teal.300'
         templateAreas={`"title title"
