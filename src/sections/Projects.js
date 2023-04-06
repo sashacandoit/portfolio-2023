@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, GridItem, SimpleGrid, Box, Image } from '@chakra-ui/react'
+import { Container, Grid, GridItem, SimpleGrid, Box, Image, Text, Heading } from '@chakra-ui/react'
 import { featured_projects } from "../data/portfolio_data"
 import SectionHeading from "./components/SectionHeading";
 
@@ -19,8 +19,11 @@ function Projects() {
         </GridItem>
         <GridItem paddingTop="3rem" border='1px' borderColor='orange.300' area={'projects'}>
           
-          <ProjectRow orientation="left" />
-          <ProjectRow orientation="right" />
+          {featured_projects.map((rowContent, rowId) => (
+            <ProjectRow rowContent={rowContent} key={rowId} />
+          ))}
+
+          {/* <ProjectRow orientation="left" /> */}
 
         </GridItem>
       </Grid>
@@ -30,26 +33,15 @@ function Projects() {
 };
 
 function ProjectRow(props) {
-  const { orientation } = props;
+  const { rowContent } = props;
   
-  if (orientation === "right") {
-    return (
-      <SimpleGrid marginBottom="5em" columns={2} spacing='5'>
-        <Box border='1px' borderColor='#1E90FF' height='20rem'>
-          <Image
-            boxSize='100%'
-            objectFit='cover'
-            src='https://placehold.co/600x400'
-            alt='Sasha Czerniawski'
-          />
-        </Box>
-        <Box border='1px' borderColor='#1E90FF' height='20rem'></Box>
-      </SimpleGrid>
-    )
-  }
   return (
     <SimpleGrid marginBottom="5em" columns={2} spacing='5'>
-        <Box border='1px' borderColor='#1E90FF' height='20rem'></Box>
+      <Box border='1px' borderColor='#1E90FF' height='20rem'>
+        <Text color='red.300' fontSize="sm">Featured Project</Text>
+        <Heading as='h4' size='md'>{rowContent.title}</Heading>
+        <Text fontSize="sm">{rowContent.description}</Text>
+        </Box>
         <Box border='1px' borderColor='#1E90FF' height='20rem'>
           <Image
             boxSize='100%'
@@ -61,5 +53,6 @@ function ProjectRow(props) {
       </SimpleGrid>
     )
 }
+
 
 export default Projects;
