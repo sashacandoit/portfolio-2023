@@ -45,24 +45,26 @@ const experience = [
   }
 ]
 
-const featured_projects = {
-  packable: {
+const featured_projects = [
+  {
     title: "Packable",
     description: "A React web app that takes the guesswork out of the packing for a trip. By pulling for a locations past weather data, a user can enter their trip dates and destination, and see likely weather conditions for when they will be there. The app generates a template packing list based on the number of days the user will be traveling and the climate of their destination. The packing list can then be edited and saved to their user profile.",
     technologies: [
       "React", "Node.js", "Express.js", "Visual Crossing API", "Netlify"
     ],
     github: "https://github.com/sashacandoit/packable-backend.git",
-    app_url: "#"
+    app_url: "#",
+    image: "https://res.cloudinary.com/dokpuqyyp/image/upload/v1680777794/3a41d7e8fe17214db13b538cfe77830d_ifywbr.png"
   },
-  styleguide: {
+  {
     title: "Style Guide Generator",
     description: "Using Python and Flask, this web app automates the process of making brand guides for designers, generating a simple, editable style guide using a brand's color scheme, organizing font styles by their use, and displaying key styling requirements to guide designers in the rest of the branding process.",
     technologies: ["Python", "Flask", "PostgreSQL", "Google Fonts API", "Heroku"],
     github: "https://github.com/sashacandoit/style-guide-generator.git",
-    app_url: "https://sasha-capstone-1.herokuapp.com/login"
+    app_url: "https://sasha-capstone-1.herokuapp.com/login",
+    image: "https://res.cloudinary.com/dokpuqyyp/image/upload/v1680777890/contractbook_app_4x_a7yl2f.png"
   }
-}
+]
 
 const other_projects = {
   1: {

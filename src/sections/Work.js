@@ -17,7 +17,7 @@ function Work() {
         <GridItem border='1px' borderColor='pink.300' area={'title'}>
           <SectionHeading title='Work' />
         </GridItem>
-        <GridItem border='1px' borderColor='orange.300' area={'work-experience'}>
+        <GridItem paddingTop="2rem" border='1px' borderColor='orange.300' area={'work-experience'}>
           <WorkTabs />
         </GridItem>
       </Grid>
