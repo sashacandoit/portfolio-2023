@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Center, Stack, Link, Heading } from '@chakra-ui/react'
-import ProjectBoxes from "./components/ProjectBoxes";
+import ProjectCards from "./components/ProjectCards";
 
 function OtherProjects() {
   return (
@@ -12,10 +12,8 @@ function OtherProjects() {
         <Center>
           <Link color='red.500' href='https://github.com/sashacandoit'>github.com/sashacandoit</Link>
         </Center>
-        <ProjectBoxes />
+        <ProjectCards />
       </Stack>
-      
-      
     </Container>
   )
 

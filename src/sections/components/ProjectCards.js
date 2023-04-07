@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Box } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import ProjectCard from "./ProjectCard";
 import { other_projects } from "../../data/portfolio_data"
 
