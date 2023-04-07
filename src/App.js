@@ -9,6 +9,7 @@ import About from './sections/About';
 import Work from './sections/Work';
 import Projects from './sections/Projects';
 import OtherProjects from './sections/OtherProjects';
+import GetInTouch from './sections/GetInTouch';
 
 
 import { Grid, GridItem } from '@chakra-ui/react' //layout
@@ -39,6 +40,7 @@ function App() {
           <Work />
           <Projects />
           <OtherProjects />
+          <GetInTouch />
         </GridItem>
 
         <GridItem pl='2' border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>

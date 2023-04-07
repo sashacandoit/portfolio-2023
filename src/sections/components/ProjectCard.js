@@ -40,13 +40,9 @@ function ProjectCard(props) {
       </CardBody>
       <CardFooter justify='space-between' flexWrap='wrap'>
         <HStack spacing={2}>
-          <Box fontSize="xs">JQuery</Box>
-          <Box fontSize="xs">Javascript</Box>
-          <Box fontSize="xs">CSS</Box>
-          <Box fontSize="xs">Wordpress</Box>
-          {/* {cardContent.technologies.map((tech, id) => (
+          {cardContent.technologies.map((tech, id) => (
             <Box key={id} fontSize="xs" >{tech}</Box>
-          ))} */}
+          ))}
         </HStack>
       </CardFooter>
 

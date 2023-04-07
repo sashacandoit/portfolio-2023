@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Center, Stack, Link, Heading } from '@chakra-ui/react'
+import { Container, Center, Stack, Link, Heading, Box } from '@chakra-ui/react'
 import ProjectCards from "./components/ProjectCards";
 
 function OtherProjects() {
