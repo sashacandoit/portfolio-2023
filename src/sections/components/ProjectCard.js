@@ -1,10 +1,9 @@
 import React from "react";
 import { Card, CardHeader, CardBody, CardFooter, HStack, Stack, Text, Flex, Link, Heading, Box, Spacer } from '@chakra-ui/react'
-import { other_projects } from "../../data/portfolio_data"
 import { FileSvg, GithubIcon, ExternalCustom } from "../../assets/icons/icons";
 
 function ProjectCard(props) {
-  // const { cardContent } = props;
+  const { cardContent } = props;
 
   return (
     <Card variant='elevated' height='100%' padding={1}>
@@ -15,21 +14,26 @@ function ProjectCard(props) {
           </Box>
           <Spacer />
           <HStack gap='2'>
-            <Link href='#' isExternal>
-              <GithubIcon fontSize="1.1em" stroke='#8892B0' fill='none' />
-            </Link>
-            <Link href='#' isExternal>
-              <ExternalCustom fontSize="1.3em" stroke='#8892B0' />
-            </Link>
+            {'github' in {cardContent} && 
+              <Link href={cardContent.github} isExternal>
+                <GithubIcon fontSize="1.1em" stroke='#8892B0' fill='none' />
+              </Link>
+            }
+
+            {'url' in {cardContent} &&
+              <Link href={cardContent.url} isExternal>
+                <ExternalCustom fontSize="1.3em" stroke='#8892B0' />
+              </Link>
+            }
           </HStack>
         </Flex>
       </CardHeader>
 
       <CardBody paddingY='0.5em'>
         <Stack spacing={1}>
-          <Heading size='sm'>Crypto Art Timeline for Wordpress Site</Heading>
+          <Heading size='sm'>{ cardContent.title }</Heading>
           <Text fontSize='sm'>
-            A custom full-page timeline integrated on a Wordpress site displaying a chronological history of digital art.
+            {cardContent.description}
           </Text>
         </Stack>
 
