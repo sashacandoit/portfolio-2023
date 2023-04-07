@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, GridItem, SimpleGrid, Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Container, Grid, GridItem } from '@chakra-ui/react'
 import { featured_projects } from "../data/portfolio_data"
 import SectionHeading from "./components/SectionHeading";
 import { LeftImgRow, RightImgRow } from "./components/ImageRows";

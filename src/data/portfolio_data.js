@@ -48,7 +48,7 @@ const experience = [
 const featured_projects = [
   {
     title: "Packable",
-    description: "A React web app that takes the guesswork out of the packing for a trip. By pulling for a locations past weather data, a user can enter their trip dates and destination, and see likely weather conditions for when they will be there. The app generates a template packing list based on the number of days the user will be traveling and the climate of their destination. The packing list can then be edited and saved to their user profile.",
+    description: "A React web app that takes the guesswork out of the packing for a trip. By pulling from a location's past weather data, a user can enter their trip dates and destination, and see likely weather conditions for when they will be there. The app generates a template packing list based on the number of days the user will be traveling and the climate of their destination. The packing list can then be edited and saved to their user profile.",
     technologies: [
       "React", "Node.js", "Express.js", "Visual Crossing API", "Netlify"
     ],
@@ -66,8 +66,8 @@ const featured_projects = [
   }
 ]
 
-const other_projects = {
-  1: {
+const other_projects = [
+  {
     title: "Crypto Art Timeline for Wordpress Site",
     description: "A custom full-page timeline integrated on a Wordpress site displaying a chronological history of digital art",
     technologies: [
@@ -79,7 +79,7 @@ const other_projects = {
     url: "https://dminti.com/digital-art-chronology/",
     github: "#"
   },
-  2: {
+  {
     title: "Ricci Albenda's Universal Color Clock",
     description: "A custom artist page featuring the launch of Ricci Albenda's Universal Color Clock NFT, developed to be integrated on a Wordpress site",
     technologies: [
@@ -90,7 +90,7 @@ const other_projects = {
     url: "https://dminti.com/universalcolorclock/",
     github: "https://github.com/sashacandoit/universal-color-clock.git"
   },
-  3: {
+  {
     title: "Sasha' Portfolio",
     description: "The inner workings of my portfolio site!",
     technologies: [
@@ -100,7 +100,7 @@ const other_projects = {
     ],
     github: "https://github.com/sashacandoit/portfolio-2023.git"
   }
-}
+]
 
 const portfolio_data = {
   about_me: {
