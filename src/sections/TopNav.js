@@ -1,8 +1,7 @@
 import React from "react";
-import { Flex, Spacer, Box, Show, Hide, IconButton } from '@chakra-ui/react' //layout
+import { Flex, Spacer, Box, Show } from '@chakra-ui/react' //layout
 import { Heading } from '@chakra-ui/react' //typography
 import { ButtonGroup, Button } from '@chakra-ui/react'
-// import { MenuSvg } from "../assets/icons/icons";
 import MobileMenu from "./components/MobileMenu";
 
 function TopNav() {
@@ -13,19 +12,18 @@ function TopNav() {
       </Box>
       <Spacer />
       <Show above='sm'>
-        <ButtonGroup gap='2'>
+        <ButtonGroup gap='5'>
           <Button colorScheme='black' variant='link'>About</Button>
           <Button colorScheme='black' variant='link'>Experience</Button>
           <Button colorScheme='black' variant='link'>Projects</Button>
           <Button colorScheme='black' variant='link'>Contact</Button>
           <Button colorScheme='red' variant='outline'>Resume</Button>
-          {/* <IconButton colorScheme='white' icon={<MenuSvg color='black' fontSize="2em" />} /> */}
-          <MobileMenu />
+          
         </ButtonGroup>
       </Show>
 
       <Show below='sm'>
-
+        <MobileMenu />
       </Show>
       
     </Flex>

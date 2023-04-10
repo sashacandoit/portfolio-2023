@@ -1,5 +1,5 @@
 import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Show } from '@chakra-ui/react'
 import RightNav from './sections/RightNav';
 import LeftNav from './sections/LeftNav'
 import Welcome from './sections/Welcome'
@@ -29,10 +29,12 @@ function App() {
         <GridItem p='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
           <TopNav />
         </GridItem>
-        
-        <GridItem pl='2' border='1px' borderColor='blue.300' area={'left-nav'}>
-          <LeftNav />
-        </GridItem>
+
+        <Show above='sm'>
+          <GridItem pl='2' border='1px' borderColor='blue.300' area={'left-nav'}>
+            <LeftNav />
+          </GridItem>
+        </Show>
         
         <GridItem border='1px' borderColor='green.300' area={'main'} align='start' padding={'0 6%'}>
           <Welcome />
@@ -46,9 +48,13 @@ function App() {
         <GridItem pl='2' border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
           <Footer />
         </GridItem>
-        <GridItem pl='2' border='1px' borderColor='pink.300' area={'right-nav'}>
-          <RightNav />
-        </GridItem>
+
+        <Show above='sm'>
+          <GridItem pl='2' border='1px' borderColor='pink.300' area={'right-nav'}>
+            <RightNav />
+          </GridItem>
+        </Show>
+        
       </Grid>
     </ChakraProvider>
   );
