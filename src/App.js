@@ -1,5 +1,5 @@
 import './App.css';
-import { ChakraProvider, Show } from '@chakra-ui/react'
+import { ChakraProvider, Container, Show } from '@chakra-ui/react'
 import RightNav from './sections/RightNav';
 import LeftNav from './sections/LeftNav'
 import Welcome from './sections/Welcome'
@@ -10,18 +10,42 @@ import Work from './sections/Work';
 import Projects from './sections/Projects';
 import OtherProjects from './sections/OtherProjects';
 import GetInTouch from './sections/GetInTouch';
-import { Grid, GridItem } from '@chakra-ui/react' //layout
+import { Grid, GridItem, Flex } from '@chakra-ui/react' //layout
 
 function App() {
   return (
     <ChakraProvider>
+      <Flex w={'100vw'} direction={'column'}>
+        <TopNav />
+        <Flex direction={'row'}>
+          <Show above='md'>
+            <LeftNav />
+          </Show>
+
+          <Flex direction={'column'}>
+            <Welcome />
+            <About />
+            <Work />
+            <Projects />
+            <OtherProjects />
+            <GetInTouch />
+          </Flex>
+          <Show above='md'>
+            <RightNav />
+          </Show>
+
+        </Flex>
+        <Footer />
+      </Flex>
+      
+
       <Grid
-        templateAreas={`"header header header"
-                  "left-nav main right-nav"
-                  "footer footer footer"`}
+        templateAreas={
+          `"header header header" 
+        "left-nav main right-nav"
+        "footer footer footer"`}
         gridTemplateRows={'60px 1fr 50px'}
         gridTemplateColumns={'75px 1fr 75px'}
-        // h='200px'
         gap='1'
       >
       
