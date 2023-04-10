@@ -11,8 +11,8 @@ function TopNav() {
         <Heading size='md'>Sasha Czerniawski</Heading>
       </Box>
       <Spacer />
-      <Show above='sm'>
-        <ButtonGroup gap='5'>
+      <Show above='md'>
+        <ButtonGroup gap={['5', '3']}>
           <Button colorScheme='black' variant='link'>About</Button>
           <Button colorScheme='black' variant='link'>Experience</Button>
           <Button colorScheme='black' variant='link'>Projects</Button>
@@ -22,7 +22,7 @@ function TopNav() {
         </ButtonGroup>
       </Show>
 
-      <Show below='sm'>
+      <Show below='md'>
         <MobileMenu />
       </Show>
       

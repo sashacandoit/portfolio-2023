@@ -10,8 +10,6 @@ import Work from './sections/Work';
 import Projects from './sections/Projects';
 import OtherProjects from './sections/OtherProjects';
 import GetInTouch from './sections/GetInTouch';
-
-
 import { Grid, GridItem } from '@chakra-ui/react' //layout
 
 function App() {
@@ -21,22 +19,23 @@ function App() {
         templateAreas={`"header header header"
                   "left-nav main right-nav"
                   "footer footer footer"`}
-        gridTemplateRows={'1fr 1fr 50px'}
+        gridTemplateRows={'60px 1fr 50px'}
         gridTemplateColumns={'75px 1fr 75px'}
-        h='200px'
+        // h='200px'
         gap='1'
       >
+      
         <GridItem p='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
           <TopNav />
         </GridItem>
 
-        <Show above='sm'>
-          <GridItem pl='2' border='1px' borderColor='blue.300' area={'left-nav'}>
+        <Show above='md'>
+          <GridItem border='1px' borderColor='blue.300' area={'left-nav'}>
             <LeftNav />
           </GridItem>
         </Show>
         
-        <GridItem border='1px' borderColor='green.300' area={'main'} align='start' padding={'0 6%'}>
+        <GridItem border='1px' borderColor='green.300' area={'main'} align='start'>
           <Welcome />
           <About />
           <Work />
@@ -45,12 +44,12 @@ function App() {
           <GetInTouch />
         </GridItem>
 
-        <GridItem pl='2' border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
+        <GridItem border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
           <Footer />
         </GridItem>
 
-        <Show above='sm'>
-          <GridItem pl='2' border='1px' borderColor='pink.300' area={'right-nav'}>
+        <Show above='md'>
+          <GridItem border='1px' borderColor='pink.300' area={'right-nav'}>
             <RightNav />
           </GridItem>
         </Show>

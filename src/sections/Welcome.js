@@ -1,11 +1,11 @@
 import React from "react";
-import { VStack, Stack, Box } from '@chakra-ui/react' //layout
+import { VStack, Stack, Box, Container } from '@chakra-ui/react' //layout
 import { Heading, Text } from '@chakra-ui/react' //typography
 import { Button } from '@chakra-ui/react'
 
 function Welcome() {
   return (
-    <Box align='start' border='1px' borderColor='blue.600' minHeight={{ base: '60vh', lg: '85vh' }}>
+    <Container maxW='container.xl' align='start' paddingX={{lg: '6%', md: '0'}} border='1px' borderColor='blue.600' minHeight={{ base: '60vh', lg: '85vh' }}>
       <VStack
         height={'30rem'}
         justify='end'
@@ -22,7 +22,7 @@ function Welcome() {
           Button
         </Button>
       </VStack>
-    </Box>
+    </Container>
   )
 }
 
