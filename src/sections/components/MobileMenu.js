@@ -1,8 +1,7 @@
 import React from "react";
-import { Flex, Spacer, Box, Show, Hide, IconButton } from '@chakra-ui/react' //layout
-import { Heading } from '@chakra-ui/react' //typography
+import { Stack, Box, Link, IconButton, HStack, Center } from '@chakra-ui/react'
 import { ButtonGroup, Button } from '@chakra-ui/react'
-import { MenuSvg } from "../../assets/icons/icons";
+import { MenuSvg, GithubIcon, LinkedinIcon, CodepenIcon } from "../../assets/icons/icons";
 import {
   Drawer,
   DrawerBody,
@@ -27,18 +26,39 @@ function MobileMenu() {
         placement='top'
         onClose={onClose}
         finalFocusRef={btnRef}
+        size='full'
       >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Mobile Menu</DrawerHeader>
-
-          <DrawerBody>
-            Menu Items
+          <DrawerHeader></DrawerHeader>
+          <DrawerBody >
+            <Stack spacing={'4'} alignItems='start' justifyContent={'start'}>
+              <Button fontSize={'2rem'} colorScheme='black' variant='link'>About</Button>
+              <Button fontSize={'2rem'} colorScheme='black' variant='link'>Experience</Button>
+              <Button fontSize={'2rem'} colorScheme='black' variant='link'>Projects</Button>
+              <Button fontSize={'2rem'} colorScheme='black' variant='link'>Contact</Button>
+              <Button fontSize={'2rem'} colorScheme='red' variant='link'>Resume</Button>
+            </Stack>
           </DrawerBody>
 
-          <DrawerFooter>
-            Contact icons
+          <DrawerFooter flexDirection={'column'} alignItems='start' justifyContent={'start'}>
+            <ButtonGroup spacing={'5'}>
+              <Link href='https://github.com/sashacandoit' isExternal>
+                <GithubIcon stroke="#0A192F" w='20px' h="21px" fill="none" />
+              </Link>
+              <Link href='https://github.com/sashacandoit' isExternal>
+                <LinkedinIcon stroke="#0A192F" width='20px' height="21" fill="none" />
+              </Link>
+              <Link href='https://github.com/sashacandoit' isExternal>
+                <CodepenIcon stroke="#0A192F" w='20px' h="20px" fill="none" />
+              </Link>
+            </ButtonGroup>
+            <Box marginY='4'>
+              <Link href='mailto:sashacandoit@gmail.com' isExternal>
+                sashacandoit@gmail.com
+              </Link>
+            </Box>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
