@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon, CodepenIcon, LineSvg } from '../assets/icons/
 function LeftNav() {
   return (
     <VStack
-      height='85vh'
+      height={{base: '75vh', lg: '85vh'}}
       justify='end'
       spacing={6}
       align='center'

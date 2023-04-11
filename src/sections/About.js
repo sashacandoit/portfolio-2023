@@ -17,7 +17,7 @@ function About() {
           <SectionHeading title='About Me' />
         </GridItem>
 
-        <GridItem colSpan={{base: 2, md: 1}} border='1px' borderColor='orange.300'>
+        <GridItem order={{ base: '2', md: '1' }} colSpan={{base: 2, md: 1}} border='1px' borderColor='orange.300'>
           <VStack
             spacing={4}
             align='stretch'
@@ -34,17 +34,17 @@ function About() {
             </Text>
           </VStack>
         </GridItem>
-        <GridItem colSpan={{ base: '2', md: '1' }} border='1px' borderColor='green.300'>
-          <Box display="flex" justifyContent="end">
+        <GridItem order={{ base: '1', md: '2' }}  colSpan={{ base: '2', md: '1' }} border='1px' borderColor='green.300'>
+          <Box display="flex" justifyContent={{ base: 'start', md: 'end' }}>
             <Image
-              boxSize='350px'
+              boxSize={{base: '100%', md:'350px'}}
               objectFit='cover'
               src='https://res.cloudinary.com/dokpuqyyp/image/upload/v1680610716/IMG_5740_cropped2_jt6qsf.jpg'
               alt='Sasha Czerniawski'
             />
           </Box>
         </GridItem>
-        <GridItem colSpan={2} border='1px' borderColor='blue.300'>
+        <GridItem order={'3'} colSpan={2} border='1px' borderColor='blue.300'>
           <Text lineHeight='1.5rem' fontSize='md'>
             Here are a few technologies I’ve been working with recently:
           </Text>
