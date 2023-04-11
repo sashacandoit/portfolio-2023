@@ -5,20 +5,19 @@ import TechTable from "./components/TechTable"
 
 function About() {
   return (
-    <Container maxW='container.lg' marginTop="12rem" marginBottom="15rem"> 
+    <Container maxW={'container.lg'} marginTop="12rem" marginBottom={{ base: '10rem', lg: "15rem" }} paddingX={{base: '0', lg: '1rem'}}> 
       <Grid
         border='1px' borderColor='teal.300'
-        templateAreas={`"title title"
-                  "about-body about-img"
-                  "tech tech"`}
-        gridTemplateColumns={'1fr 1fr'}
+        templateRows={'repeat(3, max-content)'}
+        templateColumns={'repeat(2, 1fr)'}
         gap='6'
         padding='4'
       >
-        <GridItem border='1px' borderColor='pink.300' area={'title'}>
+        <GridItem colSpan={2} border='1px' borderColor='pink.300'>
           <SectionHeading title='About Me' />
         </GridItem>
-        <GridItem border='1px' borderColor='orange.300' area={'about-body'}>
+
+        <GridItem colSpan={{base: 2, md: 1}} border='1px' borderColor='orange.300'>
           <VStack
             spacing={4}
             align='stretch'
@@ -35,7 +34,7 @@ function About() {
             </Text>
           </VStack>
         </GridItem>
-        <GridItem border='1px' borderColor='green.300' area={'about-img'}>
+        <GridItem colSpan={{ base: '2', md: '1' }} border='1px' borderColor='green.300'>
           <Box display="flex" justifyContent="end">
             <Image
               boxSize='350px'
@@ -45,7 +44,7 @@ function About() {
             />
           </Box>
         </GridItem>
-        <GridItem border='1px' borderColor='blue.300' area={'tech'}>
+        <GridItem colSpan={2} border='1px' borderColor='blue.300'>
           <Text lineHeight='1.5rem' fontSize='md'>
             Here are a few technologies I’ve been working with recently:
           </Text>

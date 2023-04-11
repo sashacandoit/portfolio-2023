@@ -1,5 +1,5 @@
 import './App.css';
-import { ChakraProvider, Container, Show } from '@chakra-ui/react'
+import { ChakraProvider, Container, Show, Stack } from '@chakra-ui/react'
 import RightNav from './sections/RightNav';
 import LeftNav from './sections/LeftNav'
 import Welcome from './sections/Welcome'
@@ -15,14 +15,14 @@ import { Grid, GridItem, Flex } from '@chakra-ui/react' //layout
 function App() {
   return (
     <ChakraProvider>
-      <Flex w={'100vw'} direction={'column'}>
+      <Flex direction={'column'}>
         <TopNav />
-        <Flex direction={'row'}>
+        <Flex direction={'row'} justifyContent='space-between' >
           <Show above='md'>
             <LeftNav />
           </Show>
 
-          <Flex direction={'column'}>
+          <Flex direction={'column'} >
             <Welcome />
             <About />
             <Work />
@@ -30,11 +30,12 @@ function App() {
             <OtherProjects />
             <GetInTouch />
           </Flex>
+
           <Show above='md'>
             <RightNav />
           </Show>
-
         </Flex>
+
         <Footer />
       </Flex>
       

@@ -6,7 +6,7 @@ import { LeftImgRow, RightImgRow } from "./components/ImageRows";
 
 function Projects() {
   return (
-    <Container maxW='container.xl' marginTop="15rem" marginBottom="15rem">
+    <Container maxW='container.xl' marginY={{base: '10rem', lg: "15rem"}} paddingX={{ base: '0', lg: '1rem' }}>
       <Grid
         border='1px' borderColor='teal.300'
         templateAreas={`"title title"

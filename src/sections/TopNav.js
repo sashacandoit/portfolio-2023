@@ -6,7 +6,7 @@ import MobileMenu from "./components/MobileMenu";
 
 function TopNav() {
   return (
-    <Flex minWidth='max-content' alignItems='center' gap='2'>
+    <Flex minWidth='100%' alignItems='center' gap='2'>
       <Box p='2'>
         <Heading size='md'>Sasha Czerniawski</Heading>
       </Box>
