@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, Stack, HStack, SimpleGrid, Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Show, Link, Stack, HStack, SimpleGrid, Box, Image, Text, Heading } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { GithubIcon } from "../../assets/icons/icons";
 
 function LeftImgRow(props) {
   const { rowContent } = props;
   return (
-    <SimpleGrid marginBottom="5em" columns={2} spacing='5'>
+    <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5'>
       <Box border='1px' borderColor='#1E90FF' height='20rem'>
         <Image
           boxSize='100%'
@@ -23,8 +23,10 @@ function LeftImgRow(props) {
 function RightImgRow(props) {
   const { rowContent } = props;
   return (
-    <SimpleGrid marginBottom="5em" columns={2} spacing='5'>
-      <ProjectDetails rowContent={rowContent} />
+    <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5'>
+      <Show above="md">
+        <ProjectDetails rowContent={rowContent} />
+      </Show>
       <Box border='1px' borderColor='#1E90FF' height='20rem'>
         <Image
           boxSize='100%'
@@ -33,6 +35,9 @@ function RightImgRow(props) {
           alt={rowContent.title}
         />
       </Box>
+      <Show below="md">
+        <ProjectDetails rowContent={rowContent} />
+      </Show>
     </SimpleGrid>
   )
 }
