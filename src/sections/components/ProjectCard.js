@@ -6,7 +6,7 @@ function ProjectCard(props) {
   const { cardContent } = props;
 
   return (
-    <Card variant='elevated' height='100%' padding={1}>
+    <Card variant='elevated'  height='100%' padding={1}>
       <CardHeader>
         <Flex minWidth='max-content' alignItems='center' gap='2'>
           <Box p='2'>
