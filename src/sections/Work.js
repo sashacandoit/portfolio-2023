@@ -8,16 +8,15 @@ function Work() {
     <Container maxW='container.lg' marginY={{ base: '10rem', lg: "15rem" }} paddingX={{ base: '0', lg: '1rem' }}>
       <Grid
         border='1px' borderColor='teal.300'
-        templateAreas={`"title title"
-                  "work-experience work-experience"`}
-        gridTemplateColumns={'1fr 1fr'}
+        templateRows={'repeat(2, max-content)'}
+        templateColumns={'repeat(2, 1fr)'}
         gap='6'
         padding='4'
       >
-        <GridItem border='1px' borderColor='pink.300' area={'title'}>
+        <GridItem colSpan={2} border='1px' borderColor='pink.300' >
           <SectionHeading title='Work' />
         </GridItem>
-        <GridItem paddingTop="2rem" border='1px' borderColor='orange.300' area={'work-experience'}>
+        <GridItem colSpan={2} paddingTop={{base: '1.5rem', md:"2rem"}} border='1px' borderColor='orange.300'>
           <WorkTabs />
         </GridItem>
       </Grid>
