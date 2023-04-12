@@ -96,7 +96,7 @@ const other_projects = [
     technologies: [
       "React",
       "Netlify",
-      "SCSS"
+      "Chakra-UI"
     ],
     github: "https://github.com/sashacandoit/portfolio-2023.git"
   }

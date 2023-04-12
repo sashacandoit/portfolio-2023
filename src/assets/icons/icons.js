@@ -33,7 +33,7 @@ const LineSvg = (props) => (
 
 const FileSvg = (props) => (
   <Icon viewBox="0 0 35 34" fill="none" {...props}>
-    <path stroke="#FF4B36" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.667" d="M34.167 27.971a3.333 3.333 0 0 1-3.334 3.334H4.167A3.333 3.333 0 0 1 .833 27.97V4.638a3.333 3.333 0 0 1 3.334-3.333H12.5l3.333 5h15a3.333 3.333 0 0 1 3.334 3.333v18.333Z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.667" d="M34.167 27.971a3.333 3.333 0 0 1-3.334 3.334H4.167A3.333 3.333 0 0 1 .833 27.97V4.638a3.333 3.333 0 0 1 3.334-3.333H12.5l3.333 5h15a3.333 3.333 0 0 1 3.334 3.333v18.333Z" />
   </Icon>
 )
 

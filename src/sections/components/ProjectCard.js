@@ -12,19 +12,19 @@ function ProjectCard(props) {
       <CardHeader>
         <Flex minWidth='max-content' alignItems='center' gap='2'>
           <Box>
-            <FileSvg fontSize="1.8em" />
+            <FileSvg fontSize="1.8em" stroke='brandRed.300' />
           </Box>
           <Spacer />
           <HStack gap='2'>
             {githubUrl && 
               <Link href={cardContent.github} isExternal>
-                <GithubIcon fontSize="1.1em" stroke='#8892B0' fill='none' />
+                <GithubIcon fontSize="1.1em" stroke='brandBlue.500' fill='none' />
               </Link>
             }
 
             {externalUrl &&
               <Link href={cardContent.url} isExternal>
-                <ExternalCustom fontSize="1.3em" stroke='#8892B0' />
+                <ExternalCustom fontSize="1.3em" stroke='brandBlue.500' />
               </Link>
             }
           </HStack>

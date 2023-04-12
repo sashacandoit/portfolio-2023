@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Center, Stack, Link, Heading } from '@chakra-ui/react'
+import { Container, Center, Stack, Link, Heading, HStack } from '@chakra-ui/react'
 import ProjectCards from "./components/ProjectCards";
 
 function OtherProjects() {
@@ -10,7 +10,10 @@ function OtherProjects() {
           <Heading as='h4' size='md'>Other Noteworthy Projects</Heading>
         </Center>
         <Center>
-          <Link color='red.500' href='https://github.com/sashacandoit'>github.com/sashacandoit</Link>
+          <HStack spacing={5}>
+            <Link color='brandRed.900' href='https://github.com/sashacandoit'>GitHub</Link>
+            <Link color='brandRed.900' href='https://github.com/sashacandoit'>CodePen</Link>
+          </HStack>
         </Center>
         <ProjectCards />
       </Stack>

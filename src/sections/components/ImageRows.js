@@ -48,7 +48,7 @@ function ProjectDetails(props) {
     <Box border='1px' borderColor='#1E90FF' height='20rem'>
       <Stack spacing={5}>
         <Box>
-          <Text color='red.300' fontSize="sm">Featured Project</Text>
+          <Text color='brandRed.900' fontSize="sm">Featured Project</Text>
           <Heading as='h4' size='md'>{rowContent.title}</Heading>
         </Box>
 
@@ -61,10 +61,10 @@ function ProjectDetails(props) {
           </HStack>
           <HStack spacing={3}>
             <Link href={rowContent.github} isExternal>
-              <GithubIcon w="5" h="21" fill="none" stroke='red.500' />
+              <GithubIcon w="5" h="21" fill="none" stroke='brandRed.300' />
             </Link>
             <Link href={rowContent.app_url} isExternal>
-              <ExternalLinkIcon fontSize="1.5em" color='red.500' />
+              <ExternalLinkIcon fontSize="1.5em" color='brandRed.300' />
             </Link>
           </HStack>
         </Box>

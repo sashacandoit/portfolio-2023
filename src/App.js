@@ -1,5 +1,5 @@
 import './App.css';
-import { ChakraProvider, Container, Show, Stack } from '@chakra-ui/react'
+import { Show, Grid, GridItem } from '@chakra-ui/react'
 import RightNav from './sections/RightNav';
 import LeftNav from './sections/LeftNav'
 import Welcome from './sections/Welcome'
@@ -10,52 +10,49 @@ import Work from './sections/Work';
 import Projects from './sections/Projects';
 import OtherProjects from './sections/OtherProjects';
 import GetInTouch from './sections/GetInTouch';
-import { Grid, GridItem, Flex } from '@chakra-ui/react' //layout
 
 function App() {
   return (
-    <ChakraProvider>
-      <Grid
-        templateAreas={
-          `"header header header" 
-        "left-nav main right-nav"
-        "footer footer footer"`}
-        gridTemplateRows={'60px 1fr 50px'}
-        gridTemplateColumns={'75px 1fr 75px'}
-        gap='1'
-      >
+    <Grid
+      templateAreas={
+        `"header header header" 
+      "left-nav main right-nav"
+      "footer footer footer"`}
+      gridTemplateRows={'60px 1fr 50px'}
+      gridTemplateColumns={'75px 1fr 75px'}
+      gap='1'
+    >
+    
+      <GridItem p='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
+        <TopNav />
+      </GridItem>
+
+      <Show above='md'>
+        <GridItem border='1px' borderColor='blue.300' area={'left-nav'}>
+          <LeftNav />
+        </GridItem>
+      </Show>
       
-        <GridItem p='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
-          <TopNav />
-        </GridItem>
+      <GridItem border='1px' borderColor='green.300' area={'main'} align='start'>
+        <Welcome />
+        <About />
+        <Work />
+        <Projects />
+        <OtherProjects />
+        <GetInTouch />
+      </GridItem>
 
-        <Show above='md'>
-          <GridItem border='1px' borderColor='blue.300' area={'left-nav'}>
-            <LeftNav />
-          </GridItem>
-        </Show>
-        
-        <GridItem border='1px' borderColor='green.300' area={'main'} align='start'>
-          <Welcome />
-          <About />
-          <Work />
-          <Projects />
-          <OtherProjects />
-          <GetInTouch />
-        </GridItem>
+      <GridItem border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
+        <Footer />
+      </GridItem>
 
-        <GridItem border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
-          <Footer />
+      <Show above='md'>
+        <GridItem border='1px' borderColor='pink.300' area={'right-nav'}>
+          <RightNav />
         </GridItem>
-
-        <Show above='md'>
-          <GridItem border='1px' borderColor='pink.300' area={'right-nav'}>
-            <RightNav />
-          </GridItem>
-        </Show>
-        
-      </Grid>
-    </ChakraProvider>
+      </Show>
+      
+    </Grid>
   );
 }
 

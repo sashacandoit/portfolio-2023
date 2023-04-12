@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, Stack, Box, Container } from '@chakra-ui/react' //layout
+import { VStack, Stack, Container } from '@chakra-ui/react' //layout
 import { Heading, Text } from '@chakra-ui/react' //typography
 import { Button } from '@chakra-ui/react'
 
@@ -18,8 +18,8 @@ function Welcome() {
           <Heading as='h1' size='4xl' noOfLines={1}>Sasha</Heading>
           <Heading as='h2' size='lg' noOfLines={1}>I build useful & novel things for the web</Heading>
         </Stack>
-        <Button colorScheme='red' variant='outline' size={'lg'}>
-          Button
+        <Button colorScheme='brandRed' variant='outline' size={'lg'}>
+          my projects
         </Button>
       </VStack>
     </Container>

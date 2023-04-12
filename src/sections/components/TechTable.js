@@ -20,7 +20,7 @@ function TechItem(props) {
   return (
     <Box>
       {itemContent.map((val, itemId) => (
-          <Box fontSize='sm' key={itemId} minH="2em"><ChevronRightIcon color='red.300' />{val}</Box>
+        <Box fontSize='sm' key={itemId} minH="2em"><ChevronRightIcon color='brandRed.900' />{val}</Box>
       ))}
     </Box>
   );

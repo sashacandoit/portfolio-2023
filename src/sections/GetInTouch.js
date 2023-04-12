@@ -14,8 +14,8 @@ function GetInTouch() {
           </Text>
         </Center>
         <Flex minWidth='max-content' alignItems='center' justifyContent='center' gap='6'>
-          <Button size='lg' minW='7.5rem' colorScheme='red' variant='outline'>Say hi</Button>
-          <Button size='lg' minW='7.5rem' colorScheme='red' variant='outline'>Resume</Button>
+          <Button size='lg' minW='7.5rem' colorScheme='brandRed' variant='outline'>Say hi</Button>
+          <Button size='lg' minW='7.5rem' colorScheme='brandRed' variant='outline'>Resume</Button>
         </Flex>
       </Stack>
     </Container>

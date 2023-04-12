@@ -17,7 +17,7 @@ function TopNav() {
           <Button colorScheme='black' variant='link'>Experience</Button>
           <Button colorScheme='black' variant='link'>Projects</Button>
           <Button colorScheme='black' variant='link'>Contact</Button>
-          <Button colorScheme='red' variant='outline'>Resume</Button>
+          <Button colorScheme='brandRed' variant='outline'>Resume</Button>
           
         </ButtonGroup>
       </Show>

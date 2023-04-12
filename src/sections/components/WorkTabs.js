@@ -10,7 +10,7 @@ function WorkTabs() {
         <Tabs orientation={"vertical"} colorScheme="red">
           <TabList alignItems={"start"}>
             {experience.map((tabContent, tabID) => (
-              <Tab fontSize="sm" textAlign="left" key={tabID} minW={"12em"} minH="3.5em" justifyContent="start">
+              <Tab color='brandRed.900' fontSize="sm" textAlign="left" key={tabID} minW={"12em"} minH="3.5em" justifyContent="start">
                 {tabContent.company}
               </Tab>
             ))}
@@ -52,12 +52,12 @@ function TabDetail(props) {
   const { tabContent } = props;
   return (
     <TabPanel overflow="scroll" maxHeight={{ base: '50vh', md: "30vh" }} minHeight={{ base: '50vh', md: "30vh" }}>
-      <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='red.500'>@ {tabContent.company}</Link></Heading>
+      <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='brandRed.900'>@ {tabContent.company}</Link></Heading>
       <Text fontSize="sm">{tabContent.start_date} - {tabContent.end_date}</Text>
       <List>
         {(tabContent.experience).map((item, idx) => (
           <ListItem fontSize="md" paddingLeft="1rem" textIndent="-1.5rem" marginTop="0.7rem" key={idx}>
-            <ListIcon as={ChevronRightIcon} color='red.500' />
+            <ListIcon as={ChevronRightIcon} color='brandRed.900' />
             {item}
           </ListItem>
         ))}
