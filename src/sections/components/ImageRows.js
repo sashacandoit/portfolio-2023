@@ -7,7 +7,7 @@ function LeftImgRow(props) {
   const { rowContent } = props;
   return (
     <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5'>
-      <Box border='1px' borderColor='#1E90FF' height='20rem'>
+      <Box height='20rem'>
         <Image
           boxSize='100%'
           objectFit='cover'
@@ -27,7 +27,7 @@ function RightImgRow(props) {
       <Show above="md">
         <ProjectDetails rowContent={rowContent} />
       </Show>
-      <Box border='1px' borderColor='#1E90FF' height='20rem'>
+      <Box height='20rem'>
         <Image
           boxSize='100%'
           objectFit='cover'
@@ -45,7 +45,7 @@ function RightImgRow(props) {
 function ProjectDetails(props) {
   const { rowContent } = props;
   return (
-    <Box border='1px' borderColor='#1E90FF' height='20rem'>
+    <Box height='20rem'>
       <Stack spacing={5}>
         <Box>
           <Text color='brandRed.900' fontSize="sm">Featured Project</Text>

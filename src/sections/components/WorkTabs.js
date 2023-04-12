@@ -10,7 +10,7 @@ function WorkTabs() {
         <Tabs orientation={"vertical"} colorScheme="red">
           <TabList alignItems={"start"}>
             {experience.map((tabContent, tabID) => (
-              <Tab color='brandRed.900' fontSize="sm" textAlign="left" key={tabID} minW={"12em"} minH="3.5em" justifyContent="start">
+              <Tab textStyle={'secondary'} color='brandRed.900' fontSize="xs" textAlign="left" key={tabID} minW={"14em"} minH="3.5em" justifyContent="start">
                 {tabContent.company}
               </Tab>
             ))}
@@ -53,7 +53,7 @@ function TabDetail(props) {
   return (
     <TabPanel overflow="scroll" maxHeight={{ base: '50vh', md: "30vh" }} minHeight={{ base: '50vh', md: "30vh" }}>
       <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='brandRed.900'>@ {tabContent.company}</Link></Heading>
-      <Text fontSize="sm">{tabContent.start_date} - {tabContent.end_date}</Text>
+      <Text fontSize="xs" textStyle={'secondary'}>{tabContent.start_date} - {tabContent.end_date}</Text>
       <List>
         {(tabContent.experience).map((item, idx) => (
           <ListItem fontSize="md" paddingLeft="1rem" textIndent="-1.5rem" marginTop="0.7rem" key={idx}>

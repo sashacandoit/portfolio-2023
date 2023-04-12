@@ -5,19 +5,18 @@ import TechTable from "./components/TechTable"
 
 function About() {
   return (
-    <Container maxW={'container.lg'} marginTop="12rem" marginBottom={{ base: '10rem', lg: "15rem" }} paddingX={{base: '0', lg: '1rem'}}> 
+    <Container maxW={'container.lg'} marginTop={{ base: '12rem', lg: "18rem" }} marginBottom={{ base: '10rem', lg: "15rem" }} paddingX={{base: '0', lg: '1rem'}}> 
       <Grid
-        border='1px' borderColor='teal.300'
         templateRows={'repeat(3, max-content)'}
         templateColumns={'repeat(2, 1fr)'}
         gap='6'
         padding='4'
       >
-        <GridItem colSpan={2} border='1px' borderColor='pink.300'>
+        <GridItem colSpan={2} >
           <SectionHeading title='About Me' />
         </GridItem>
 
-        <GridItem order={{ base: '2', md: '1' }} colSpan={{base: 2, md: 1}} border='1px' borderColor='orange.300'>
+        <GridItem order={{ base: '2', md: '1' }} colSpan={{base: 2, md: 1}} >
           <VStack
             spacing={4}
             align='stretch'
@@ -34,7 +33,7 @@ function About() {
             </Text>
           </VStack>
         </GridItem>
-        <GridItem order={{ base: '1', md: '2' }}  colSpan={{ base: '2', md: '1' }} border='1px' borderColor='green.300'>
+        <GridItem order={{ base: '1', md: '2' }}  colSpan={{ base: '2', md: '1' }} >
           <Box display="flex" justifyContent={{ base: 'start', md: 'end' }}>
             <Image
               boxSize={{base: '100%', md:'350px'}}
@@ -44,7 +43,7 @@ function About() {
             />
           </Box>
         </GridItem>
-        <GridItem order={'3'} colSpan={2} border='1px' borderColor='blue.300'>
+        <GridItem order={'3'} colSpan={2} >
           <Text lineHeight='1.5rem' fontSize='md'>
             Here are a few technologies I’ve been working with recently:
           </Text>
