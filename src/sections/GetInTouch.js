@@ -4,9 +4,9 @@ import { Container, Center, Stack, Button, Text, Heading, Flex, Spacer } from '@
 function GetInTouch() {
   return (
     <Container maxW='container.sm' marginY="15rem">
-      <Stack border='1px' borderColor='teal.300' spacing={8}>
+      <Stack spacing={8}>
         <Center>
-          <Heading lineHeight={'0.8em'} as='h3' size='2xl'>Get In Touch</Heading>
+          <Heading className="heading-outline" lineHeight={'0.8em'} as='h3' size='2xl'>Get In Touch</Heading>
         </Center>
         <Center>
           <Text size='lg' textAlign='center' width='30rem'>
@@ -14,8 +14,8 @@ function GetInTouch() {
           </Text>
         </Center>
         <Flex minWidth='max-content' alignItems='center' justifyContent='center' gap='6'>
-          <Button size='lg' minW='7.5rem' colorScheme='brandRed' variant='outline'>Say hi</Button>
-          <Button size='lg' minW='7.5rem' colorScheme='brandRed' variant='outline'>Resume</Button>
+          <Button textStyle={'secondary'} fontWeight={'500'} fontSize='sm' size='lg' minW='7.5rem' colorScheme='brandRed' variant='outline'>write me</Button>
+          <Button textStyle={'secondary'} fontWeight={'500'} fontSize='sm' size='lg' minW='7.5rem' colorScheme='brandRed' variant='outline'>resume</Button>
         </Flex>
       </Stack>
     </Container>

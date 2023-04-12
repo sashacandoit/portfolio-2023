@@ -5,13 +5,12 @@ import { Button } from '@chakra-ui/react'
 
 function Welcome() {
   return (
-    <Container maxW={'100%'} align='start' paddingX={{lg: '6%', md: '0'}} minHeight={{ base: '75vh', lg: '85vh' }}>
+    <Container maxW={'100%'} justifyContent='end' alignItems='start' paddingX={{lg: '6%', md: '0'}} >
       <VStack
-        height={'30rem'}
+        minHeight={{ base: '70vh', lg: '80vh' }}
         justify='end'
-        spacing={6}
+        spacing={'6rem'}
         align='start'
-        // border='1px' borderColor='pink.300'
       >
         <Stack spacing={3}>
           <Text color={'black'} textStyle='secondary' fontWeight={'400'}>Hi, I'm</Text>

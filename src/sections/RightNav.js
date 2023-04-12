@@ -5,7 +5,7 @@ import { LineSvg } from '../assets/icons/icons.js'
 function RightNav() {
   return (
     <VStack
-      height={{ base: '75vh', lg: '85vh' }}
+      height={{ base: '70vh', lg: '80vh' }}
       justify='end'
       spacing={6}
       align='center'
