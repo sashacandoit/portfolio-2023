@@ -4,23 +4,25 @@ import { FileSvg, GithubIcon, ExternalCustom } from "../../assets/icons/icons";
 
 function ProjectCard(props) {
   const { cardContent } = props;
+  const githubUrl = cardContent.github
+  const externalUrl = cardContent.url
 
   return (
     <Card variant='elevated'  height='100%' padding={1}>
       <CardHeader>
         <Flex minWidth='max-content' alignItems='center' gap='2'>
-          <Box p='2'>
+          <Box>
             <FileSvg fontSize="1.8em" />
           </Box>
           <Spacer />
           <HStack gap='2'>
-            {'github' in {cardContent} && 
+            {githubUrl && 
               <Link href={cardContent.github} isExternal>
                 <GithubIcon fontSize="1.1em" stroke='#8892B0' fill='none' />
               </Link>
             }
 
-            {'url' in {cardContent} &&
+            {externalUrl &&
               <Link href={cardContent.url} isExternal>
                 <ExternalCustom fontSize="1.3em" stroke='#8892B0' />
               </Link>
