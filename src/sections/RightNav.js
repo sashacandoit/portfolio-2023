@@ -11,7 +11,7 @@ function RightNav() {
       align='center'
       border='1px' borderColor='pink.300'
     >
-      <Link href='mailto:sashacandoit@gmail.com' isExternal className='RightNav-email-link'>
+      <Link fontSize={'sm'} textStyle={'secondary'} letterSpacing={'1.1px'} fontWeight='500' href='mailto:sashacandoit@gmail.com' isExternal className='RightNav-email-link'>
         sashacandoit@gmail.com
       </Link>
       <LineSvg />

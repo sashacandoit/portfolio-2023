@@ -14,7 +14,7 @@ function Welcome() {
         border='1px' borderColor='pink.300'
       >
         <Stack spacing={3}>
-          <Text fontSize='lg' textStyle='secondary' fontWeight={'400'}>Hi, I'm</Text>
+          <Text color={'black'} textStyle='secondary' fontWeight={'400'}>Hi, I'm</Text>
           <Heading as='h1' variant='customH1' noOfLines={1}>Sasha</Heading>
           <Heading as='h2' variant='customH2' noOfLines={1}>I build useful & novel things for the web</Heading>
         </Stack>
