@@ -14,11 +14,11 @@ function Welcome() {
         border='1px' borderColor='pink.300'
       >
         <Stack spacing={3}>
-          <Text fontSize='lg'>Hi, I'm</Text>
-          <Heading as='h1' size='4xl' noOfLines={1}>Sasha</Heading>
-          <Heading as='h2' size='lg' noOfLines={1}>I build useful & novel things for the web</Heading>
+          <Text fontSize='lg' textStyle='secondary' fontWeight={'400'}>Hi, I'm</Text>
+          <Heading as='h1' variant='customH1' noOfLines={1}>Sasha</Heading>
+          <Heading as='h2' variant='customH2' noOfLines={1}>I build useful & novel things for the web</Heading>
         </Stack>
-        <Button colorScheme='brandRed' variant='outline' size={'lg'}>
+        <Button textStyle='secondary' colorScheme='brandRed' variant='outline' size={'lg'} fontSize='sm' fontWeight={'500'} >
           my projects
         </Button>
       </VStack>

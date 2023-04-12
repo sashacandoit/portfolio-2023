@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme, defineStyle, defineStyleConfig } from '@chakra-ui/react'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -27,12 +27,43 @@ const colors = {
   }
 }
 
-const fonts = {
-  body: '',
-  heading: ''
+const textStyles = {
+  primary: {
+    fontFamily: "Inter"
+  },
+  secondary: {
+    fontFamily: "Fira Code"
+  },
 }
 
-const theme = extendTheme({ colors });
+const fonts = {
+  body: 'Inter',
+  heading: 'Inter'
+}
+
+const customH1 = {
+  fontWeight: '900',
+  textStroke: '1px brandBlack'
+}
+
+const components = {
+  Heading: {
+    variants: {
+      customH1: {
+        fontWeight:'bold',
+        fontSize: '8rem',
+        colors: 'brandBlack'
+      },
+      customH2: {
+        fontWeight: '600',
+        fontSize: '2rem',
+        colors: 'brandBlack'
+      }
+    }
+  }
+}
+
+const theme = extendTheme({ colors, fonts, textStyles, components });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

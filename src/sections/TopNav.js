@@ -12,12 +12,12 @@ function TopNav() {
       </Box>
       <Spacer />
       <Show above='md'>
-        <ButtonGroup gap={['5', '3']}>
-          <Button colorScheme='black' variant='link'>About</Button>
-          <Button colorScheme='black' variant='link'>Experience</Button>
-          <Button colorScheme='black' variant='link'>Projects</Button>
-          <Button colorScheme='black' variant='link'>Contact</Button>
-          <Button colorScheme='brandRed' variant='outline'>Resume</Button>
+        <ButtonGroup gap={['3', '5', '8']}>
+          <Button colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>About</Button>
+          <Button colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Experience</Button>
+          <Button colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Projects</Button>
+          <Button colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Contact</Button>
+          <Button colorScheme='brandRed' variant='outline' textStyle='secondary' fontWeight={'500'} fontSize='xs'>Resume</Button>
           
         </ButtonGroup>
       </Show>
