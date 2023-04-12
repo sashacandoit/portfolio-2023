@@ -52,7 +52,6 @@ const components = {
       customH1: {
         fontWeight:'bold',
         fontSize: '8rem',
-        color: 'brandBlack'
       },
       customH2: {
         fontWeight: '600',
@@ -62,7 +61,6 @@ const components = {
       customH3: {
         fontWeight: 'bold',
         fontSize: '3.8rem',
-        color: 'brandBlack'
       }
     }
   }

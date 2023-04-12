@@ -9,7 +9,7 @@ function LeftNav() {
       justify='end'
       spacing={6}
       align='center'
-      border='1px' borderColor='pink.300'
+      // border='1px' borderColor='pink.300'
     >
       <Link href='https://github.com/sashacandoit' isExternal>
         <GithubIcon stroke="#0A192F" w='20' h="21" fill="none" />

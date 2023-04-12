@@ -5,17 +5,17 @@ import { Button } from '@chakra-ui/react'
 
 function Welcome() {
   return (
-    <Container maxW={'100%'} align='start' paddingX={{lg: '6%', md: '0'}} border='1px' borderColor='blue.600' minHeight={{ base: '75vh', lg: '85vh' }}>
+    <Container maxW={'100%'} align='start' paddingX={{lg: '6%', md: '0'}} minHeight={{ base: '75vh', lg: '85vh' }}>
       <VStack
         height={'30rem'}
         justify='end'
         spacing={6}
         align='start'
-        border='1px' borderColor='pink.300'
+        // border='1px' borderColor='pink.300'
       >
         <Stack spacing={3}>
           <Text color={'black'} textStyle='secondary' fontWeight={'400'}>Hi, I'm</Text>
-          <Heading as='h1' variant='customH1' noOfLines={1}>Sasha</Heading>
+          <Heading className='heading-outline' as='h1' variant='customH1' noOfLines={1}>Sasha</Heading>
           <Heading as='h2' variant='customH2' noOfLines={1}>I build useful & novel things for the web</Heading>
         </Stack>
         <Button textStyle='secondary' colorScheme='brandRed' variant='outline' size={'lg'} fontSize='sm' fontWeight={'500'} >

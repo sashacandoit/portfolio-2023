@@ -23,17 +23,17 @@ function App() {
       gap='1'
     >
     
-      <GridItem p='2' border='1px' borderColor='orange.300' area={'header'} textAlign={'center'}>
+      <GridItem p='2' area={'header'} textAlign={'center'}>
         <TopNav />
       </GridItem>
 
       <Show above='md'>
-        <GridItem border='1px' borderColor='blue.300' area={'left-nav'}>
+        <GridItem area={'left-nav'}>
           <LeftNav />
         </GridItem>
       </Show>
       
-      <GridItem border='1px' borderColor='green.300' area={'main'} align='start'>
+      <GridItem area={'main'} align='start'>
         <Welcome />
         <About />
         <Work />
@@ -42,12 +42,12 @@ function App() {
         <GetInTouch />
       </GridItem>
 
-      <GridItem border='1px' borderColor='blue.300' area={'footer'} textAlign={'center'}>
+      <GridItem area={'footer'} textAlign={'center'}>
         <Footer />
       </GridItem>
 
       <Show above='md'>
-        <GridItem border='1px' borderColor='pink.300' area={'right-nav'}>
+        <GridItem area={'right-nav'}>
           <RightNav />
         </GridItem>
       </Show>

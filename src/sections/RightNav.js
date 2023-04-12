@@ -9,7 +9,7 @@ function RightNav() {
       justify='end'
       spacing={6}
       align='center'
-      border='1px' borderColor='pink.300'
+      // border='1px' borderColor='pink.300'
     >
       <Link fontSize={'sm'} textStyle={'secondary'} letterSpacing={'1.1px'} fontWeight='500' href='mailto:sashacandoit@gmail.com' isExternal className='RightNav-email-link'>
         sashacandoit@gmail.com

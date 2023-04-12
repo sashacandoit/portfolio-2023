@@ -19,3 +19,8 @@
 .RightNav-email-link {
   writing-mode: vertical-rl;
 }
+
+.heading-outline {
+  -webkit-text-stroke: 1px black;
+  color: white;
+}
