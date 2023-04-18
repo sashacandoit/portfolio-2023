@@ -27,7 +27,7 @@ function WorkTabs() {
 
       <Show below='md'>
         <Tabs orientation={"horizontal"} colorScheme="red">
-          <TabList alignItems={"start"}>
+          <TabList position={"relative"} zIndex={'100'}  alignItems={"start"}>
             {experience.map((tabContent, tabID) => (
               <Tab fontSize="sm" textAlign="left" key={tabID} minW={'10em'} minH="3em" justifyContent="start">
                 {tabContent.company}
