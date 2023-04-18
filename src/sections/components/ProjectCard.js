@@ -43,7 +43,7 @@ function ProjectCard(props) {
       <CardFooter justify='space-between' flexWrap='wrap'>
         <HStack spacing={2}>
           {cardContent.technologies.map((tech, id) => (
-            <Box key={id} fontSize="xs" >{tech}</Box>
+            <Box textStyle={'secondary'} key={id} fontSize="xs" >{tech}</Box>
           ))}
         </HStack>
       </CardFooter>

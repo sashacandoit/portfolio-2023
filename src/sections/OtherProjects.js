@@ -9,7 +9,7 @@ function OtherProjects() {
           <Heading as='h4' size='md'>Other Noteworthy Projects</Heading>
         </Center>
         <Center marginTop={'4'}>
-          <HStack spacing={5}>
+        <HStack textStyle={'secondary'} spacing={5} fontSize={'sm'}>
             <Link color='brandRed.900' href='https://github.com/sashacandoit'>GitHub</Link>
             <Link color='brandRed.900' href='https://github.com/sashacandoit'>CodePen</Link>
           </HStack>
