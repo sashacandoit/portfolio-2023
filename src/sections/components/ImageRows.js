@@ -48,7 +48,7 @@ function ProjectDetails(props) {
     <Box height='20rem'>
       <Stack spacing={5}>
         <Box>
-          <Text color='brandRed.900' fontSize="sm">Featured Project</Text>
+          <Text textStyle={'secondary'} color='brandRed.900' fontSize="sm">Featured Project</Text>
           <Heading as='h4' size='md' marginTop={2}>{rowContent.title}</Heading>
         </Box>
 
@@ -56,7 +56,7 @@ function ProjectDetails(props) {
         <Box>
           <HStack spacing={2}>
             {rowContent.technologies.map((tech, id) => (
-              <Box key={id} fontSize="xs" >{tech}</Box>
+              <Box textStyle={'secondary'} key={id} fontSize="xs" >{tech}</Box>
             ))}
           </HStack>
           <HStack spacing={3} marginY={3}>
