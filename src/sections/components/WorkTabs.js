@@ -1,5 +1,5 @@
 import React from "react";
-import { Show, Tabs, TabList, Tab, TabPanels, TabPanel, List, ListItem, ListIcon, Heading, Text, Link } from '@chakra-ui/react'
+import { Show, Tabs, TabList, Tab, TabPanels, TabPanel, List, ListItem, ListIcon, Heading, Text, Link, Box } from '@chakra-ui/react'
 import { experience } from "../../data/portfolio_data"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
@@ -51,18 +51,22 @@ function WorkTabs() {
 function TabDetail(props) {
   const { tabContent } = props;
   return (
-    <TabPanel overflow="scroll" maxHeight={{ base: '50vh', md: "30vh" }} minHeight={{ base: '50vh', md: "30vh" }}>
-      <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='brandRed.900'>@ {tabContent.company}</Link></Heading>
-      <Text fontSize="xs" textStyle={'secondary'}>{tabContent.start_date} - {tabContent.end_date}</Text>
-      <List>
-        {(tabContent.experience).map((item, idx) => (
-          <ListItem fontSize="md" paddingLeft="1rem" textIndent="-1.5rem" marginTop="0.7rem" key={idx}>
-            <ListIcon as={ChevronRightIcon} color='brandRed.900' />
-            {item}
-          </ListItem>
-        ))}
-      </List>
-    </TabPanel>
+    <Box className="gradientBox">
+      <TabPanel overflow="scroll" maxHeight={{ base: '50vh', md: "30vh" }} minHeight={{ base: '55vh', md: "35vh" }}>
+      
+        <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='brandRed.900'>@ {tabContent.company}</Link></Heading>
+        <Text marginY={2} fontSize="xs" textStyle={'secondary'}>{tabContent.start_date} - {tabContent.end_date}</Text>
+        <List paddingTop={2} paddingBottom={10}>
+          {(tabContent.experience).map((item, idx) => (
+            <ListItem fontSize="md" paddingLeft="1rem" textIndent="-1.5rem" marginTop="0.7rem" key={idx}>
+              <ListIcon as={ChevronRightIcon} color='brandRed.900' />
+              {item}
+            </ListItem>
+          ))}
+        </List>
+      
+      </TabPanel>
+    </Box>
   );
 }
 
