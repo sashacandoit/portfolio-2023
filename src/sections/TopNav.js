@@ -15,7 +15,7 @@ function TopNav() {
       <Show above='md'>
         <ButtonGroup gap={['3', '5', '8']}>
           <Button as="a" href="#about_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>About</Button>
-          <Button as="a" href="#work_section_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Experience</Button>
+          <Button as="a" href="#work_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Experience</Button>
           <Button as="a" href="#projects_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Projects</Button>
           <Button as="a" href="#contact_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Contact</Button>
           <Button as="a" href="/Sasha_Czerniawski_Resume_2023.pdf" download="SashaCzerniawskiResume2023" colorScheme='brandRed' variant='outline' textStyle='secondary' fontWeight={'500'} fontSize='xs'>Resume</Button>

@@ -61,7 +61,7 @@ function ProjectDetails(props) {
           </HStack>
           <HStack spacing={3} marginY={3}>
             <Link href={rowContent.github} isExternal>
-              <GithubIcon w="5" h="21" fill="none" stroke='brandRed.300' />
+              <GithubIcon strokeWidth="1.75" w="5" h="21" fill="none" stroke='brandRed.300' />
             </Link>
             <Link href={rowContent.app_url} isExternal>
               <ExternalLinkIcon fontSize="1.5em" color='brandRed.300' />

@@ -5,7 +5,7 @@ import WorkTabs from "./components/WorkTabs";
 
 function Work() {
   return (
-    <Container maxW='container.lg' marginY={{ base: '10rem', lg: "15rem" }} paddingX={{ base: '0', lg: '1rem' }}>
+    <Container id="work_section" maxW='container.lg' marginY={{ base: '10rem', lg: "15rem" }} paddingX={{ base: '0', lg: '1rem' }}>
       <Grid
         templateRows={'repeat(2, max-content)'}
         templateColumns={'repeat(2, 1fr)'}

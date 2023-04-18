@@ -18,7 +18,7 @@ function ProjectCard(props) {
           <HStack gap='2'>
             {githubUrl && 
               <Link href={cardContent.github} isExternal>
-                <GithubIcon fontSize="1.1em" stroke='brandBlue.500' fill='none' />
+                <GithubIcon strokeWidth="1.75" fontSize="1.1em" stroke='brandBlue.500' fill='none' />
               </Link>
             }
 

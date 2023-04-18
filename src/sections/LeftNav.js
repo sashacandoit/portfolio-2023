@@ -11,13 +11,13 @@ function LeftNav() {
       align='center'
     >
       <Link href='https://github.com/sashacandoit' isExternal>
-        <GithubIcon stroke="#0A192F" w='20' h="21" fill="none" />
+        <GithubIcon strokeWidth="1.667" stroke="#0A192F" w='20' h="21" fill="none" />
       </Link>
       <Link href='https://github.com/sashacandoit' isExternal>
-        <LinkedinIcon stroke="#0A192F" width='20px' height="21" fill="none" />
+        <LinkedinIcon strokeWidth="1.667" stroke="#0A192F" width='20px' height="21" fill="none" />
       </Link>
       <Link href='https://github.com/sashacandoit' isExternal>
-        <CodepenIcon stroke="#0A192F" w='20px' h="20px" fill="none" />
+        <CodepenIcon strokeWidth="1.667" stroke="#0A192F" w='20px' h="20px" fill="none" />
       </Link>
       <LineSvg />
 

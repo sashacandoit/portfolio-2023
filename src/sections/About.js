@@ -5,7 +5,7 @@ import TechTable from "./components/TechTable"
 
 function About() {
   return (
-    <Container maxW={'container.lg'} marginTop={{ base: '12rem', lg: "18rem" }} marginBottom={{ base: '10rem', lg: "15rem" }} paddingX={{base: '0', lg: '1rem'}}> 
+    <Container id="about_section" maxW={'container.lg'} marginTop={{ base: '12rem', lg: "18rem" }} marginBottom={{ base: '10rem', lg: "15rem" }} paddingX={{base: '0', lg: '1rem'}}> 
       <Grid
         templateRows={'repeat(3, max-content)'}
         templateColumns={'repeat(2, 1fr)'}
