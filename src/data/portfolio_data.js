@@ -54,7 +54,7 @@ const featured_projects = [
     ],
     github: "https://github.com/sashacandoit/packable-backend.git",
     app_url: "#",
-    image: "https://res.cloudinary.com/dokpuqyyp/image/upload/v1680777794/3a41d7e8fe17214db13b538cfe77830d_ifywbr.png"
+    image: "https://res.cloudinary.com/dokpuqyyp/image/upload/v1681816222/packable_mockup_swc6ek.jpg"
   },
   {
     title: "Style Guide Generator",
@@ -62,7 +62,7 @@ const featured_projects = [
     technologies: ["Python", "Flask", "PostgreSQL", "Google Fonts API", "Heroku"],
     github: "https://github.com/sashacandoit/style-guide-generator.git",
     app_url: "https://sasha-capstone-1.herokuapp.com/login",
-    image: "https://res.cloudinary.com/dokpuqyyp/image/upload/v1680777890/contractbook_app_4x_a7yl2f.png"
+    image: "https://res.cloudinary.com/dokpuqyyp/image/upload/v1681816206/styleguide_mockup_wf31ko.jpg"
   }
 ]
 

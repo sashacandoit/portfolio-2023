@@ -6,12 +6,12 @@ import { GithubIcon } from "../../assets/icons/icons";
 function LeftImgRow(props) {
   const { rowContent } = props;
   return (
-    <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5'>
-      <Box height='20rem'>
+    <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5em'>
+      <Box height='22rem'>
         <Image
           boxSize='100%'
           objectFit='cover'
-          src='https://placehold.co/600x400'
+          src={rowContent.image}
           alt={rowContent.title}
         />
       </Box>
@@ -23,7 +23,7 @@ function LeftImgRow(props) {
 function RightImgRow(props) {
   const { rowContent } = props;
   return (
-    <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5'>
+    <SimpleGrid marginBottom="5em" columns={{ base: 1, md: 2 }} spacing='5em'>
       <Show above="md">
         <ProjectDetails rowContent={rowContent} />
       </Show>
@@ -31,7 +31,7 @@ function RightImgRow(props) {
         <Image
           boxSize='100%'
           objectFit='cover'
-          src='https://placehold.co/600x400'
+          src={rowContent.image}
           alt={rowContent.title}
         />
       </Box>
@@ -49,7 +49,7 @@ function ProjectDetails(props) {
       <Stack spacing={5}>
         <Box>
           <Text color='brandRed.900' fontSize="sm">Featured Project</Text>
-          <Heading as='h4' size='md'>{rowContent.title}</Heading>
+          <Heading as='h4' size='md' marginTop={2}>{rowContent.title}</Heading>
         </Box>
 
         <Box fontSize="sm">{rowContent.description}</Box>
@@ -59,7 +59,7 @@ function ProjectDetails(props) {
               <Box key={id} fontSize="xs" >{tech}</Box>
             ))}
           </HStack>
-          <HStack spacing={3}>
+          <HStack spacing={3} marginY={3}>
             <Link href={rowContent.github} isExternal>
               <GithubIcon w="5" h="21" fill="none" stroke='brandRed.300' />
             </Link>
