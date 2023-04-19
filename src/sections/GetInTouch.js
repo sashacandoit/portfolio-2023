@@ -26,8 +26,9 @@ function GetInTouch() {
             variant='outline'>write me</Button>
           <Button
             as="a"
-            href="/Sasha_Czerniawski_Resume_2023.pdf"
-            download="SashaCzerniawskiResume2023"
+            href="https://res.cloudinary.com/dokpuqyyp/image/upload/v1681901104/Sasha_Czerniawski_Resume_2023_mxnxlk.pdf"
+            isExternal
+            target="_blank" 
             textStyle={'secondary'}
             fontWeight={'500'}
             fontSize='sm'
