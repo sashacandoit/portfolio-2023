@@ -7,7 +7,7 @@ import MobileMenu from "./components/MobileMenu";
 function TopNav() {
 
   return (
-    <Flex minWidth='100%' alignItems='center' gap='2' paddingX={{ sm: '12', md: '6' }} paddingY={{sm: '8', md: '5'}}>
+    <Flex minWidth='100%' alignItems='center' gap='2' paddingX='6' paddingY='2'>
       <Box >
         <Heading size='md'>Sasha Czerniawski</Heading>
       </Box>
@@ -18,7 +18,7 @@ function TopNav() {
           <Button as="a" href="#work_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Experience</Button>
           <Button as="a" href="#projects_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Projects</Button>
           <Button as="a" href="#contact_section" colorScheme='black' variant='link' textStyle='secondary' fontSize='xs'>Contact</Button>
-          <Button as="a" href="https://res.cloudinary.com/dokpuqyyp/image/upload/v1681901104/Sasha_Czerniawski_Resume_2023_mxnxlk.pdf" isExternal target="_blank" colorScheme='brandRed' variant='outline' textStyle='secondary' fontWeight={'500'} fontSize='xs'>Resume</Button>
+          <Button as="a" href="/Sasha_Czerniawski_Resume_2023.pdf" download="SashaCzerniawskiResume2023" colorScheme='brandRed' variant='outline' textStyle='secondary' fontWeight={'500'} fontSize='xs'>Resume</Button>
         </ButtonGroup>
       </Show>
 
