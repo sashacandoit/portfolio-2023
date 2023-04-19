@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Stack, Text, HStack, Box, Flex } from '@chakra-ui/react' //typography
+import { Link, Stack, Text, Box, Flex } from '@chakra-ui/react' //typography
 import { GithubIcon, LinkedinIcon, CodepenIcon } from "../assets/icons/icons";
 
 

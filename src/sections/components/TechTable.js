@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Box, Text } from '@chakra-ui/react'
+import { SimpleGrid, Box } from '@chakra-ui/react'
 import { about_me_tech } from "../../data/portfolio_data"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 

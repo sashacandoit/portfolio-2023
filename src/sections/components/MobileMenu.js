@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Box, Link, IconButton, HStack, Center } from '@chakra-ui/react'
+import { Stack, Box, Link, IconButton } from '@chakra-ui/react'
 import { ButtonGroup, Button } from '@chakra-ui/react'
 import { MenuSvg, GithubIcon, LinkedinIcon, CodepenIcon } from "../../assets/icons/icons";
 import {
