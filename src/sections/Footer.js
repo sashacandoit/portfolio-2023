@@ -10,13 +10,13 @@ function Footer() {
         Designed & Built by Sasha Czerniawski
       </Text>
       <Flex minWidth='max-content' alignItems='center' justifyContent='center' gap='6'>
-        <Link href="#" isExternal>
+        <Link href="https://www.linkedin.com/in/sasha-c-41347526/" isExternal>
           <LinkedinIcon strokeWidth="1" w="5" h="18" fill="none" stroke='gray.500' />
         </Link>
-        <Link href="#" isExternal>
+        <Link href="https://github.com/sashacandoit" isExternal>
           <GithubIcon strokeWidth="1" w="5" h="18" fill="none" stroke='gray.500' />
         </Link>
-        <Link href="#" isExternal>
+        <Link href="https://codepen.io/sashacandoit" isExternal>
           <CodepenIcon strokeWidth="1" w="5" h="18" fill="none" stroke='gray.500' />
         </Link>
       </Flex>
