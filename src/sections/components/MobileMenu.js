@@ -23,7 +23,7 @@ function MobileMenu() {
       <IconButton ref={btnRef} onClick={onOpen} colorScheme='white' icon={<MenuSvg color='black' fontSize="2em" />} />
       <Drawer
         isOpen={isOpen}
-        placement='top'
+        placement='right'
         onClose={onClose}
         finalFocusRef={btnRef}
         size='full'
