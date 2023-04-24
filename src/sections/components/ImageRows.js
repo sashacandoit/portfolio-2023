@@ -1,5 +1,5 @@
 import React from "react";
-import { Show, Link, Stack, HStack, SimpleGrid, Box, Image, Text, Heading } from '@chakra-ui/react'
+import { Show, Link, Stack, HStack, Flex, SimpleGrid, Box, Image, Text, Heading } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { GithubIcon } from "../../assets/icons/icons";
 
@@ -54,11 +54,11 @@ function ProjectDetails(props) {
 
         <Box fontSize="sm">{rowContent.description}</Box>
         <Box>
-          <HStack spacing={2}>
+          <Flex direction={"row"} flexWrap={"wrap"} justifyContent={"space-between"}>
             {rowContent.technologies.map((tech, id) => (
               <Box textStyle={'secondary'} key={id} fontSize="xs" >{tech}</Box>
             ))}
-          </HStack>
+          </Flex>
           <HStack spacing={3} marginY={3}>
             <Link href={rowContent.github} isExternal>
               <GithubIcon strokeWidth="1.75" w="5" h="21" fill="none" stroke='brandRed.300' />

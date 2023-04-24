@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, HStack, Stack, Text, Flex, Link, Heading, Box, Spacer } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, HStack, Stack, Text, Flex, Link, Heading, Box, Spacer, SimpleGrid } from '@chakra-ui/react'
 import { FileSvg, GithubIcon, ExternalCustom } from "../../assets/icons/icons";
 
 function ProjectCard(props) {
@@ -41,11 +41,11 @@ function ProjectCard(props) {
 
       </CardBody>
       <CardFooter justify='space-between' flexWrap='wrap'>
-        <HStack spacing={2}>
+        {/* <Flex flexWrap='wrap' direction={"row"} spacing={2}> */}
           {cardContent.technologies.map((tech, id) => (
             <Box textStyle={'secondary'} key={id} fontSize="xs" >{tech}</Box>
           ))}
-        </HStack>
+        {/* </Flex> */}
       </CardFooter>
 
     </Card>
