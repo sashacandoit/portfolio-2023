@@ -6,7 +6,7 @@ function LeftNav() {
   return (
     <Container justifyContent='end' alignItems='center'>
       <VStack
-        minHeight={{ base: '30rem', lg: '40rem', xl: "100vh" }}
+        minHeight={{ base: '30rem', lg: '40rem', xl: "85vh" }}
         justify='end'
         spacing={6}
         align='center'
