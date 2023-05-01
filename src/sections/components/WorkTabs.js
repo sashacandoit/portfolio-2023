@@ -1,12 +1,12 @@
 import React from "react";
-import { Show, Tabs, TabList, Tab, TabPanels, TabPanel, List, ListItem, ListIcon, Heading, Text, Link, Box } from '@chakra-ui/react'
+import { Show, Hide, Tabs, TabList, Tab, TabPanels, TabPanel, List, ListItem, ListIcon, Heading, Text, Link, Box } from '@chakra-ui/react'
 import { experience } from "../../data/portfolio_data"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 function WorkTabs() {
   return (
     <>
-      <Show above='md'>
+      <Hide below='md'>
         <Tabs orientation={"vertical"} colorScheme="red">
           <TabList alignItems={"start"}>
             {experience.map((tabContent, tabID) => (
@@ -23,7 +23,7 @@ function WorkTabs() {
           </TabPanels>
 
         </Tabs>
-      </Show>
+      </Hide>
 
       <Show below='md'>
         <Tabs orientation={"horizontal"} colorScheme="red">
