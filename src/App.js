@@ -13,7 +13,7 @@ import GetInTouch from './sections/GetInTouch';
 
 function App() {
   return (
-    <Container maxWidth={"100vw"}>
+    <Container maxWidth={"100%"}>
       <Grid
         templateAreas={
           `"header header header" 
