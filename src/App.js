@@ -1,5 +1,5 @@
 import './App.css';
-import { Show, Grid, GridItem, Container } from '@chakra-ui/react'
+import { Show, Grid, GridItem, Container, breakpoints } from '@chakra-ui/react'
 import RightNav from './sections/RightNav';
 import LeftNav from './sections/LeftNav'
 import Welcome from './sections/Welcome'
@@ -15,16 +15,24 @@ function App() {
   return (
     <Container maxWidth={"100%"}>
       <Grid
-        templateAreas={
+        templateAreas={{
+          base:
+            `"header"
+            "main"
+            "footer"`,
+          md:
           `"header header header" 
       "left-nav main right-nav"
-      "footer footer footer"`}
+      "footer footer footer"`}}
         gridTemplateRows={'60px 1fr 50px'}
-        gridTemplateColumns={'75px 1fr 75px'}
+        gridTemplateColumns={{
+          base: "100%",
+          md: '75px 1fr 75px'
+        }}
         gap='1'
       >
 
-        <GridItem p='2' area={'header'} textAlign={'center'}>
+        <GridItem p='2' area={'header'} textAlign={'left'}>
           <TopNav />
         </GridItem>
 
