@@ -27,6 +27,8 @@ function MobileMenu() {
         onClose={onClose}
         finalFocusRef={btnRef}
         size='full'
+        autoFocus={false}
+        returnFocusOnClose={false}
       >
         <DrawerOverlay />
         <DrawerContent>
@@ -34,7 +36,7 @@ function MobileMenu() {
           <DrawerHeader></DrawerHeader>
           <DrawerBody >
             <Stack spacing={'4'} alignItems='start' justifyContent={'start'}>
-              <Button as="a" href="#about_section" fontSize={'2rem'} colorScheme='black' variant='link'>About</Button>
+              <Button  as="a" href="#about_section" fontSize={'2rem'} colorScheme='black' variant='link'>About</Button>
               <Button as="a" href="#work_section" fontSize={'2rem'} colorScheme='black' variant='link'>Experience</Button>
               <Button as="a" href="#projects_section" fontSize={'2rem'} colorScheme='black' variant='link'>Projects</Button>
               <Button as="a" href='mailto:sashacandoit@gmail.com' fontSize={'2rem'} colorScheme='black' variant='link'>Contact</Button>
