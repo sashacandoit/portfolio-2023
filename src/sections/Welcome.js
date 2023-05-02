@@ -7,7 +7,7 @@ function Welcome() {
   return (
     <Box justifyContent='end' alignItems='start' paddingX={"6%"} paddingBottom={'5%'}>
       <VStack
-        minHeight={{ base: '30rem', lg: '40rem', xl: "50rem" }}
+        minHeight={{ base: '30rem', lg: '40rem', xl: "85vh" }}
         justify='end'
         spacing={{ base: "2rem", lg: '6rem' }}
         align='start'
