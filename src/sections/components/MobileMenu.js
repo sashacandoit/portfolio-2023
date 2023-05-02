@@ -42,7 +42,7 @@ function MobileMenu() {
             </Stack>
           </DrawerBody>
 
-          <DrawerFooter flexDirection={'column'} alignItems='start' justifyContent={'start'}>
+          <DrawerFooter marginY='8' flexDirection={'column'} alignItems='start' justifyContent={'start'}>
             <ButtonGroup spacing={'5'}>
               <Link href='https://github.com/sashacandoit' isExternal>
                 <GithubIcon stroke="#0A192F" w='20px' h="21px" fill="none" />
