@@ -37,12 +37,12 @@ function MobileMenu() {
               <Button as="a" href="#about_section" fontSize={'2rem'} colorScheme='black' variant='link'>About</Button>
               <Button as="a" href="#work_section" fontSize={'2rem'} colorScheme='black' variant='link'>Experience</Button>
               <Button as="a" href="#projects_section" fontSize={'2rem'} colorScheme='black' variant='link'>Projects</Button>
-              <Button as="a" href="#contact_section" fontSize={'2rem'} colorScheme='black' variant='link'>Contact</Button>
+              <Button as="a" href='mailto:sashacandoit@gmail.com' fontSize={'2rem'} colorScheme='black' variant='link'>Contact</Button>
               <Button as="a" href="/Sasha_Czerniawski_Resume_2023.pdf" download="SashaCzerniawskiResume2023" fontSize={'2rem'} colorScheme='brandRed' variant='link'>Resume</Button>
             </Stack>
           </DrawerBody>
 
-          <DrawerFooter marginY='8' flexDirection={'column'} alignItems='start' justifyContent={'start'}>
+          <DrawerFooter marginY='10' flexDirection={'column'} alignItems='start' justifyContent={'start'}>
             <ButtonGroup spacing={'5'}>
               <Link href='https://github.com/sashacandoit' isExternal>
                 <GithubIcon stroke="#0A192F" w='20px' h="21px" fill="none" />
