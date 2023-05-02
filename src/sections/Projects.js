@@ -6,7 +6,7 @@ import { LeftImgRow, RightImgRow } from "./components/ImageRows";
 
 function Projects() {
   return (
-    <Container id="projects_section" maxW='container.xl' marginY={{base: '10rem', lg: "15rem"}} paddingX={{ base: '0', lg: '1rem' }}>
+    <Container id="projects_section" maxW='container.xl' marginY={{base: '7rem', lg: "15rem"}} paddingX={{ base: '0', lg: '1rem' }}>
       
       <Grid
         templateRows={'repeat(2, max-content)'}

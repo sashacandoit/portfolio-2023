@@ -29,7 +29,7 @@ function WorkTabs() {
         <Tabs orientation={"horizontal"} colorScheme="red">
           <TabList position={"relative"} zIndex={'100'}  alignItems={"start"}>
             {experience.map((tabContent, tabID) => (
-              <Tab fontSize="sm" textAlign="left" key={tabID} minW={'10em'} minH="3em" justifyContent="start">
+              <Tab fontSize="sm" textAlign="left" key={tabID} minW={'9em'} minH="3em" justifyContent="start">
                 {tabContent.company}
               </Tab>
             ))}
@@ -52,7 +52,7 @@ function TabDetail(props) {
   const { tabContent } = props;
   return (
     <Box className="gradientBox">
-      <TabPanel overflow="scroll" maxHeight={{ base: '50vh', md: "30vh" }} minHeight={{ base: '55vh', md: "35vh" }}>
+      <TabPanel overflow="scroll" maxHeight={{ base: '40vh', md: "20rem" }} minHeight={{ base: '55vh', md: "35vh" }}>
       
         <Heading as='h5' size='sm'>{tabContent.title} <Link href='#' color='brandRed.900'>@ {tabContent.company}</Link></Heading>
         <Text marginY={2} fontSize="xs" textStyle={'secondary'}>{tabContent.start_date} - {tabContent.end_date}</Text>

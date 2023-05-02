@@ -4,7 +4,7 @@ import ProjectCards from "./components/ProjectCards";
 
 function OtherProjects() {
   return (
-    <Container maxW='container.lg' marginY={{ base: '10rem', lg: "15rem" }} paddingX={{ base: '2.5rem', sm: '0', lg: '1rem' }}>
+    <Container maxW='container.lg' paddingX={{ base: '2.5rem', sm: '0', lg: '1rem' }}>
         <Center>
           <Heading as='h4' size='md'>Other Noteworthy Projects</Heading>
         </Center>

@@ -30,7 +30,7 @@ const experience = [
     ]
   },
   {
-    company: "Sotto il Sole Inc.",
+    company: "Sotto il Sole",
     title: "Founder & Cobbler",
     start_date: "June 2017",
     end_date: "Present",

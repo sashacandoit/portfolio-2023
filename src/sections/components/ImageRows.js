@@ -6,8 +6,8 @@ import { GithubIcon } from "../../assets/icons/icons";
 function LeftImgRow(props) {
   const { rowContent } = props;
   return (
-    <SimpleGrid marginBottom="5em" columns={{ base: 1, lg: 2 }} spacing='5em'>
-      <Box height='22rem'>
+    <SimpleGrid marginBottom="5em" columns={{ base: 1, lg: 2 }} spacing={{ base: '2.5rem', lg: '5em'}}>
+      <Box height={{ base: '16rem', md: '20rem' }}>
         <Image
           boxSize='100%'
           objectFit='cover'
@@ -23,11 +23,11 @@ function LeftImgRow(props) {
 function RightImgRow(props) {
   const { rowContent } = props;
   return (
-    <SimpleGrid marginBottom="5em" columns={{ base: 1, lg: 2 }} spacing='5em'>
+    <SimpleGrid marginBottom="5em" columns={{ base: 1, lg: 2 }} spacing={{ base: '2.5rem', lg: '5em' }}>
       <Hide below="md">
         <ProjectDetails rowContent={rowContent} />
       </Hide>
-      <Box height='20rem'>
+      <Box height={{ base: '16rem', md: '20rem'}}>
         <Image
           boxSize='100%'
           objectFit='cover'
