@@ -7,7 +7,7 @@ import MobileMenu from "./components/MobileMenu";
 function TopNav() {
 
   return (
-    <Flex minWidth='100%' alignItems='center' gap='2' paddingX={{ base: '4', md: '6' }} paddingY={{ base: '6', lg: '2'}}>
+    <Flex minWidth='100%' alignItems='center' gap='2' paddingX={{ base: '4', md: '6' }} paddingY={{ base: '6', lg: '4'}}>
       <Box >
         <Heading size='md'>Sasha Czerniawski</Heading>
       </Box>

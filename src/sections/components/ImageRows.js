@@ -24,7 +24,7 @@ function RightImgRow(props) {
   const { rowContent } = props;
   return (
     <SimpleGrid marginBottom="5em" columns={{ base: 1, lg: 2 }} spacing={{ base: '2.5rem', lg: '5em' }}>
-      <Hide below="md">
+      <Hide below="lg">
         <ProjectDetails rowContent={rowContent} />
       </Hide>
       <Box height={{ base: '16rem', md: '20rem'}}>
@@ -35,7 +35,7 @@ function RightImgRow(props) {
           alt={rowContent.title}
         />
       </Box>
-      <Show below="md">
+      <Show below="lg">
         <ProjectDetails rowContent={rowContent} />
       </Show>
     </SimpleGrid>
