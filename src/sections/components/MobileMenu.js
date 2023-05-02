@@ -27,6 +27,7 @@ function MobileMenu() {
         onClose={onClose}
         finalFocusRef={btnRef}
         size='full'
+        blockScrollOnMount={false}
         autoFocus={false}
         returnFocusOnClose={false}
       >
@@ -36,15 +37,34 @@ function MobileMenu() {
           <DrawerHeader></DrawerHeader>
           <DrawerBody >
             <Stack spacing={'4'} alignItems='start' justifyContent={'start'}>
-              <Button  as="a" href="#about_section" fontSize={'2rem'} colorScheme='black' variant='link'>About</Button>
+              {/* <Button  as="a" href="#about_section" fontSize={'2rem'} colorScheme='black' variant='link'>About</Button>
               <Button as="a" href="#work_section" fontSize={'2rem'} colorScheme='black' variant='link'>Experience</Button>
-              <Button as="a" href="#projects_section" fontSize={'2rem'} colorScheme='black' variant='link'>Projects</Button>
+              <Button as="a" href="#projects_section" fontSize={'2rem'} colorScheme='black' variant='link'>Projects</Button> */}
               <Button as="a" href='mailto:sashacandoit@gmail.com' fontSize={'2rem'} colorScheme='black' variant='link'>Contact</Button>
               <Button as="a" href="/Sasha_Czerniawski_Resume_2023.pdf" download="SashaCzerniawskiResume2023" fontSize={'2rem'} colorScheme='brandRed' variant='link'>Resume</Button>
+
+              {/* Temporary fix for mobile menu navigation */}
+              <ButtonGroup paddingTop='6' spacing={'5'}>
+                <Link href='https://github.com/sashacandoit' isExternal>
+                  <GithubIcon stroke="#0A192F" w='20px' h="21px" fill="none" />
+                </Link>
+                <Link href='https://www.linkedin.com/in/sasha-c-41347526/' isExternal>
+                  <LinkedinIcon stroke="#0A192F" width='20px' height="21" fill="none" />
+                </Link>
+                <Link href='https://codepen.io/sashacandoit' isExternal>
+                  <CodepenIcon stroke="#0A192F" w='20px' h="20px" fill="none" />
+                </Link>
+              </ButtonGroup>
+              <Box marginY='4'>
+                <Link href='mailto:sashacandoit@gmail.com' isExternal>
+                  sashacandoit@gmail.com
+                </Link>
+              </Box>
             </Stack>
           </DrawerBody>
 
-          <DrawerFooter marginY='10' flexDirection={'column'} alignItems='start' justifyContent={'start'}>
+          {/* Temporary fix for navigation bug in mobile menu */}
+          {/* <DrawerFooter marginY='10' flexDirection={'column'} alignItems='start' justifyContent={'start'}>
             <ButtonGroup spacing={'5'}>
               <Link href='https://github.com/sashacandoit' isExternal>
                 <GithubIcon stroke="#0A192F" w='20px' h="21px" fill="none" />
@@ -61,7 +81,7 @@ function MobileMenu() {
                 sashacandoit@gmail.com
               </Link>
             </Box>
-          </DrawerFooter>
+          </DrawerFooter> */}
         </DrawerContent>
       </Drawer>
     </>
