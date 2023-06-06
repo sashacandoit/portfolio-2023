@@ -25,8 +25,8 @@ function About() {
               Hello, My name is Sasha and I have a passion for building meaningful user experiences in both the digital and physical world. I’m a lifelong learner, and am always expanding my toolkit to effectively solve complex problems in efficient, elegant and human-centric ways.
             </Text>
             <Text fontSize='md' lineHeight='1.5rem'>
-              My interest in web development started while making changes to a Wordpress website for a <Link color='brandRed.900' href='#'>
-                startup</Link> that my employer founded. I dived down the HTML and CSS rabbit hole and never looked back!
+              My interest in web development started while making changes to a Wordpress website for <Link color='brandRed.900' href='#'>
+                DMINTI Inc.</Link>, a startup which merges artists in the digital and legacy art worlds to curate, produce, and position impactful digital art and Web3 experiences. Working with artists and designers, I built custom pages integrating my own HTML elements, CSS styling and experimented with JavaScript scripts. 
             </Text>
             <Text fontSize='md' lineHeight='1.5rem'>
               Now, 3 years later, I’m a full-stack software engineer thanks to an intense boot camp program offered by <Link color='brandRed.900' href='#'>Springboard</Link>, while applying what I learned to building my <Link color='brandRed.900' href='#'>own projects</Link> and new pages and features for <Link color='brandRed.900' href='#'>DMINTI’s</Link> website.
